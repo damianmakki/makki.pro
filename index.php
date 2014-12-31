@@ -1,17 +1,17 @@
 <?php $pageTitle='NYC Designer and Developer'; ?>
 <?php $pageDescription='Damian Makki is a creative web and print designer based out of New York City.'; ?>
 
-<?php 
+<?php
 	include('components/header.php');
-	require('components/dribbble.php'); 
-	$client = new Dribbble\Api\Client();   
+	require('components/dribbble.php');
+	$client = new Dribbble\Api\Client();
 ?>
 
     <div class="container content-container">
-    
+
     	<!-- featured work -->
 		<div id="featured-work" class="row section">
-			<div class="span2 label"><h3>featured work</h3></div>
+			<div class="span2 label"><h3>featured work!</h3></div>
 			<div class="span9 offset1">
 				<div class="row">
 					<div class="block span5">
@@ -20,7 +20,7 @@
 						        <span data-src="img/tequila-avion-hero.jpg"></span>
 						        <span data-src="img/tequila-avion-hero.jpg" data-media="(min-device-pixel-ratio: 2.0)"></span>
 						        <span data-src="img/tequila-avion-hero-alternate.jpg" data-media="(max-width: 767px)"></span>
-							</span>   
+							</span>
 						</a>
 					</div>
 					<div class="block span4">
@@ -29,7 +29,7 @@
 						        <span data-src="img/neso-hero.jpg"></span>
 						        <span data-src="img/neso-hero.jpg" data-media="(min-device-pixel-ratio: 2.0)"></span>
 						        <span data-src="img/neso-hero-alternate.jpg" data-media="(max-width: 767px)"></span>
-							</span>   
+							</span>
 						</a>
 					</div>
 				</div>
@@ -40,7 +40,7 @@
 						        <span data-src="img/taxi-magic-hero.jpg"></span>
 						        <span data-src="img/taxi-magic-hero.jpg" data-media="(min-device-pixel-ratio: 2.0)"></span>
 						        <span data-src="img/taxi-magic-hero-alternate.jpg" data-media="(max-width: 767px)"></span>
-							</span>   
+							</span>
 						</a>
 					</div>
 					<div class="block span3">
@@ -49,7 +49,7 @@
 						        <span data-src="img/top-gan-hero.jpg"></span>
 						        <span data-src="img/top-gan-hero.jpg" data-media="(min-device-pixel-ratio: 2.0)"></span>
 						        <span data-src="img/top-gan-hero-alternate.jpg" data-media="(max-width: 767px)"></span>
-							</span>   
+							</span>
 						</a>
 					</div>
 					<div class="block span2">
@@ -58,33 +58,33 @@
 						        <span data-src="img/vivid-software-solutions-hero.jpg"></span>
 						        <span data-src="img/vivid-software-solutions-hero.jpg" data-media="(min-device-pixel-ratio: 2.0)"></span>
 						        <span data-src="img/vivid-software-solutions-hero-alternate.jpg" data-media="(max-width: 767px)"></span>
-							</span>   
+							</span>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- /featured work -->
-		
+
 		<!-- latest work -->
 		<div id="latest-work" class="row section">
 			<div class="span2 label"><h3>latest work</h3></div>
 			<div class="span9 offset1">
 				<div class="row">
-					<?php 
+					<?php
 try {
 $shots = $client->getPlayerShots('damianmakki');
 							foreach ($shots->shots as $shot) {
 								printf('<div class="block span4 shot"><a target="_blank" href="%s"><img src="%s"></a></div>', $shot->url, $shot->image_url);
 								}
 } catch (Dribbble\Api\Exception $e) { var_dump($e->getMessage()); }
-						
+
 					?>
 				</div>
 			</div>
 		</div>
 		<!-- /latest work -->
-		
+
 		<!-- contact -->
 		<div id="contact" class="row section">
 			<div class="span2 label"><h3>contact</h3></div>
@@ -94,9 +94,9 @@ $shots = $client->getPlayerShots('damianmakki');
 			<div class="social span9 offset3"><a target="_blank" href="http://dribbble.com/damianmakki"><i class="icon-dribbble"></i> damianmakki</a></div>
 			<div class="social span9 offset3"><a href="skype:damian.makki?call"><i class="icon-skype"></i> damian.makki</a></div>
 			<div class="social span9 offset3"><a target="_blank" href="https://twitter.com/damianmakki"><i class="icon-twitter-sign"></i> @damianmakki</a></div>
-			<div class="social span9 offset3"><a target="_blank" href="https://linkedin.com/in/damianmakki"><i class="icon-linkedin-sign"></i> Damian Makki</a></div>			
+			<div class="social span9 offset3"><a target="_blank" href="https://linkedin.com/in/damianmakki"><i class="icon-linkedin-sign"></i> Damian Makki</a></div>
 			<div class="social span9 offset3"><a target="_blank" href="https://github.com/damianmakki"><i class="icon-github-sign"></i> damianmakki</a></div>
-			
+
 					</div>
 		<!-- /contact -->
 	</div> <!-- /container -->
