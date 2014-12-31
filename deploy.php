@@ -3,7 +3,7 @@ $commands = [
   'echo $PWD',
   'whoami',
   'git branch -r',
-  'sudo git pull -v',
+  'sudo git pull',
   'git status',
   'git submodule sync',
   'git submodule update',
