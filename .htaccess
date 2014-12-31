@@ -1,0 +1,9 @@
+RewriteEngine On
+
+DirectoryIndex index.html index.php
+RewriteBase /
+#Redirects July 18, 2013
+rewritecond %{REQUEST_FILENAME} !-f
+rewritecond %{REQUEST_FILENAME} !-d
+rewritecond $1 !^(index\.php|robots\.txt|index\.md)
+rewriterule ^(.*)$ index.php?/$1 [L]
