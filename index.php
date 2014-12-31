@@ -11,7 +11,7 @@
 
     	<!-- featured work -->
 		<div id="featured-work" class="row section">
-			<div class="span2 label"><h3>featured work</h3></div>
+			<div class="span2 label"><h3>featured work!!</h3></div>
 			<div class="span9 offset1">
 				<div class="row">
 					<div class="block span5">
