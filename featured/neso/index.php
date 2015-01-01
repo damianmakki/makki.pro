@@ -1,15 +1,11 @@
-<?$root = $_SERVER['DOCUMENT_ROOT'] . '/demo/makki';?>
+<?$root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
 
 <? $pageTitle='neso'; ?>
 <? $pageDescription='neso - a branding and identity project completed by Damian Makki of makki.pro.'; ?>
-
-<?php include($root . '/components/header.php'); ?>
-
-
-
+<?php include($root . '/../components/header.php'); ?>
 
     <div class="container content-container">
-    
+
     	<!-- work -->
 		<div class="row section">
 			<div class="span2 project"><h3>neso</h3><p>neso is an upcoming project centered around high-quality beach equipment. At an early stage, the logo and look-and-feel has been established with much more to come. The neso website is currently in development. Stay tuned for more!</p><p><a target="_blank" href="http://www.nesotents.com">Visit neso.</a></p></div>
@@ -18,7 +14,7 @@
 					<div class="block span9">
 						<span data-picture data-alt="neso and Damian Makki">
 						        <span data-src="img/intro.jpg"></span>
-						</span> 
+						</span>
 					</div>
 				</div>
 				<div class="row">
@@ -28,7 +24,7 @@
 					<div class="block span9">
 						<span data-picture data-alt="neso sunburst">
 						        <span data-src="img/neso1.jpg"></span>
-						</span> 
+						</span>
 					</div>
 				</div>
 				<div class="row">
@@ -38,7 +34,7 @@
 					<div class="block span9">
 						<span data-picture data-alt="neso typeface">
 						        <span data-src="img/neso2.jpg"></span>
-						</span> 
+						</span>
 					</div>
 				</div>
 				<div class="row">
@@ -48,14 +44,14 @@
 					<div class="block span9">
 						<span data-picture data-alt="neso typeface">
 						        <span data-src="img/neso3.jpg"></span>
-						</span> 
+						</span>
 					</div>
 				</div>
 		</div>
 	</div>
 		<!-- /work -->
 	</div> <!-- /container -->
-	
-	<?php include($root . '/featured/featured-components.php'); ?>
-	
-	<?php include($root . '/components/footer.php'); ?>
+
+  <?php include($root . '/../featured/featured-components.php'); ?>
+
+  <?php include($root . '/../components/footer.php'); ?>

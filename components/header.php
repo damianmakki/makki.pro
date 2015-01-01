@@ -8,18 +8,13 @@
     <meta name="author" content="Damian Makki">
 
     <!-- CSS -->
-    <link href="http://www.makki.pro/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="http://www.makki.pro/assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="http://www.makki.pro/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://www.makki.pro/assets/css/style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    
-    <!-- Project Stylesheet -->
-    <link href="http://www.makki.pro/assets/css/app.css" rel="stylesheet">
-    
+
     <!-- jQuery (1.9.1) -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	
+
 	<!--Modernizr-->
 	<script src="http://www.makki.pro/assets/js/modernizr.js"></script>
 
@@ -30,7 +25,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="http://www.makki.pro/img/favicon.ico">
-	
+
   </head>
 
   <body>
