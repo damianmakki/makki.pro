@@ -1,7 +1,7 @@
-<?$root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
+<?php $root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
 
-<? $pageTitle='neso'; ?>
-<? $pageDescription='neso - a branding and identity project completed by Damian Makki of makki.pro.'; ?>
+<?php $pageTitle='neso'; ?>
+<?php $pageDescription='neso - a branding and identity project completed by Damian Makki of makki.pro.'; ?>
 <?php include($root . '/../components/header.php'); ?>
 
     <div class="container content-container">
