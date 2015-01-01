@@ -1,7 +1,7 @@
-<?$root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
+<?php $root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
 
-<? $pageTitle='Tequila Avión'; ?>
-<? $pageDescription='Tequila Avión - a website redesign project with Damian Makki of makki.pro.'; ?>
+<?php $pageTitle='Tequila Avión'; ?>
+<?php $pageDescription='Tequila Avión - a website redesign project with Damian Makki of makki.pro.'; ?>
 
 <?php include($root . '/../components/header.php'); ?>
 

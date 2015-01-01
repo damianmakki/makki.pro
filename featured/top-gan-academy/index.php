@@ -1,7 +1,7 @@
-<?$root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
+<?php $root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
 
-<? $pageTitle='Top Gan Academy'; ?>
-<? $pageDescription='Top Gan Academy - identity, packaging, and website projects with Damian Makki of makki.pro.'; ?>
+<?php $pageTitle='Top Gan Academy'; ?>
+<?php $pageDescription='Top Gan Academy - identity, packaging, and website projects with Damian Makki of makki.pro.'; ?>
 
 <?php include($root . '/../components/header.php'); ?>
 

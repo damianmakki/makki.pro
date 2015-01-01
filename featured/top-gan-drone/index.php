@@ -1,7 +1,7 @@
-<?$root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
+<?php $root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
 
-<? $pageTitle='Top Gan Drone'; ?>
-<? $pageDescription='Top Gan Drone - a brand and website design project with Damian Makki of makki.pro.'; ?>
+<?php $pageTitle='Top Gan Drone'; ?>
+<?php $pageDescription='Top Gan Drone - a brand and website design project with Damian Makki of makki.pro.'; ?>
 
 <?php include($root . '/../components/header.php'); ?>
 

@@ -1,7 +1,7 @@
-<?$root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
+<?php $root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
 
-<? $pageTitle='Taxi Magic'; ?>
-<? $pageDescription='Taxi Magic - various web and print projects with Damian Makki of makki.pro.'; ?>
+<?php $pageTitle='Taxi Magic'; ?>
+<?php $pageDescription='Taxi Magic - various web and print projects with Damian Makki of makki.pro.'; ?>
 
 <?php include($root . '/../components/header.php'); ?>
 
