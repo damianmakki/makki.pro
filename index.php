@@ -1,4 +1,4 @@
-<?php $pageTitle='NYC Designer and Developer'; ?>
+<?php $pageTitle='Designer and Developer'; ?>
 <?php $pageDescription='Damian Makki is a creative web and print designer based out of New York City.'; ?>
 
 <?php
