@@ -8,4 +8,4 @@
 // Copyright 2015
 // www.makki.pro
 //
-////////////////////////////////////////*/body{background:#fff}.sidebar{width:20%;height:100vh;position:fixed;background:#000}.nav{padding:10px;background:gray;position:fixed;left:50px;top:50px}
+////////////////////////////////////////*/body{background:#fff}.sidebar{width:20%;height:100vh;position:fixed;background:#000}.nav{padding:10px;background:gray;position:fixed;left:50px;top:50px;z-index:10}

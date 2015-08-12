@@ -1,4 +1,21 @@
 body { background: white; }
 
-.sidebar { width: 20%; height: 100vh; position: fixed; background: black; }
-.nav { padding: 10px; background: gray; position: fixed; left: 50px; top: 50px; }
+.sidebar { 
+
+	width: 20%; 
+	height: 100vh; 
+	position: fixed; 
+	background: black;
+
+}
+
+.nav { 
+
+	padding: 10px; 
+	background: gray; 
+	position: fixed; 
+	left: 50px; 
+	top: 50px; 
+	z-index: 10;
+
+}
