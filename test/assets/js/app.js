@@ -6,8 +6,6 @@ $(document).ready(function(){
   		slidesToScroll: 1,
 		speed: 500,
 		respondTo: 'min',
-		centerMode: true,
-  		variableWidth: true,
-  		adaptiveHeight: true
+		centerMode: true
 	});
 });
