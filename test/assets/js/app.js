@@ -4,7 +4,10 @@ $(document).ready(function(){
 		infinite: true,
   		slidesToShow: 1,
   		slidesToScroll: 1,
-		speed: 500.
-		//respondTo: 'min'
+		speed: 500,
+		respondTo: 'min',
+		centerMode: true,
+  		variableWidth: true,
+  		adaptiveHeight: true
 	});
 });
