@@ -19,10 +19,12 @@ body { @include clearfix; font-family: 'Gotham', Helvetica, sans-serif; }
 
 	span {
 
-		padding: 30px;
-		background: gray;
+		padding: 15px 30px;
+		background: #272727;
 		color: white;
+
 		&.dm { text-transform: uppercase; }
+		
 	}
 
 }
