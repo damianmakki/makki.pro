@@ -6,6 +6,8 @@ body {
 	background: white;
 }
 
+* { box-sizing: border-box; }
+
 
 .sidebar { 
 
@@ -22,14 +24,18 @@ body {
 	left: 50px; 
 	top: 50px; 
 	z-index: 10;
+	font-size: 12px;
 
 	.menu-burger {
 
 		background: red; 
 		float: left; 
-		height: 48px;
-		width: 48px;
+		height: 42px;
+		width: 42px;
 		cursor: pointer;
+		padding: 5px;
+
+		img { width: 100%; }
 	}
 
 	span {
@@ -57,6 +63,7 @@ body {
 	width: calc(100% - 350px);
 	margin-left: 250px;
 	padding: 150px 50px;
+	@include clearfix;
 
 	&.case-study {
 
@@ -69,7 +76,7 @@ body {
 			background: white;
 			position: fixed;
 			width: 100%;
-			padding: 30px;
+			padding: 30px 50px;
 			bottom: 0;
 			left: 0;
 			box-shadow: 0px 0px 355px 0px rgba(0,0,0,0.25);
@@ -89,13 +96,13 @@ body {
 				width: 100%;
 				font-weight: 700;
 				font-size: 8px;
-				margin-bottom: 5px;
+				margin-bottom: 10px;
 				text-transform: uppercase;
 
 
 			}
+
+			p { font-size: 12px; }
 		}
-
 	}
-
 }
