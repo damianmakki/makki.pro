@@ -8,4 +8,4 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 // Copyright 2015
 // www.makki.pro
 //
-////////////////////////////////////////*/body{font-family:Gotham,Helvetica,sans-serif}body:after{content:"";display:table;clear:both}.sidebar{width:20%;height:100vh;position:fixed;background:#000}.nav{position:fixed;left:50px;top:50px;z-index:10}.nav span{padding:15px 30px;background:#272727;color:#fff}.nav span.dm{text-transform:uppercase}
+////////////////////////////////////////*/body{font-family:Gotham,Helvetica,sans-serif}body:after{content:"";display:table;clear:both}.sidebar{width:20%;height:100vh;position:fixed;background:#000}.nav{position:fixed;left:50px;top:50px;z-index:10}.nav .menu-burger{background:red;float:left}.nav span{padding:15px 30px;background:#272727;color:#fff;display:block;float:left;margin:5px 0}.nav span.dm{text-transform:uppercase;margin-left:0}
