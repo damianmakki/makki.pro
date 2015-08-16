@@ -35,7 +35,7 @@ body { @include clearfix; font-family: 'Gotham', Helvetica, sans-serif; }
 		float: left;
 		margin: 0 2px;
 
-		&.dm { text-transform: uppercase; margin-left: 0;}
+		&.dm { text-transform: uppercase; margin-left: 0; font-weight: 700; }
 
 	}
 
