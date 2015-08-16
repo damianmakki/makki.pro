@@ -1,4 +1,6 @@
-$(#carousel).slick({
-  dots: true,
-  speed: 500
+$(document).ready(function(){
+	$(#carousel).slick({
+		dots: true,
+		speed: 500
+	});
 });
