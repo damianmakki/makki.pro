@@ -1,4 +1,5 @@
-body { background: white; }
+body { @include clearfix; font-family: 'Gotham', Helvetica, sans-serif; }
+
 
 .sidebar { 
 
