@@ -12,11 +12,17 @@ body { @include clearfix; font-family: 'Gotham', Helvetica, sans-serif; }
 
 .nav { 
 
-	padding: 10px; 
-	background: gray; 
 	position: fixed; 
 	left: 50px; 
 	top: 50px; 
 	z-index: 10;
+
+	span {
+
+		padding: 30px;
+		background: gray;
+		color: white;
+		&.dm { text-transform: uppercase; }
+	}
 
 }
