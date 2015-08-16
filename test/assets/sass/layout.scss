@@ -17,7 +17,14 @@ body { @include clearfix; font-family: 'Gotham', Helvetica, sans-serif; }
 	top: 50px; 
 	z-index: 10;
 
-	.menu-burger { background: red; float: left; }
+	.menu-burger {
+
+		background: red; 
+		float: left; 
+		height: 48px;
+		width: 48px;
+		cursor: pointer;
+	}
 
 	span {
 
@@ -26,7 +33,7 @@ body { @include clearfix; font-family: 'Gotham', Helvetica, sans-serif; }
 		color: white;
 		display: block;
 		float: left;
-		margin: 5px 0;
+		margin: 0 5px;
 
 		&.dm { text-transform: uppercase; margin-left: 0;}
 
