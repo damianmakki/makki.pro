@@ -49,9 +49,11 @@ body {
 		background: #272727;
 		padding: 30px;
 		width: 199px;
-		position: relative;
+		position: absolute;
 		top: 46px;
 		display: none;
+
+		@include breakpoint(mobile) { top: 98px; }
 
 		&.opened { @include fadeInUp(); display: block; }
 		&.closed { @include fadeOutDown(); display: block; }
@@ -91,14 +93,15 @@ body {
 		float: left;
 		margin: 0 2px;
 		font-weight: 100;
+		
+		@include breakpoint(mobile) { margin-top: 2px; }
 
 		&.dm { 
 
 			text-transform: uppercase; 
 			margin-left: 0; 
 			font-weight: 700;
-
-			@include breakpoint(mobile) { content: 'DM'; }
+			margin-top: 0;
 
 		}
 	}
