@@ -50,6 +50,9 @@ body {
 		@include fadeInUp();
 		background: black;
 		padding: 10px;
+		width: 199px;
+		position: relative;
+		top: 46px;
 
 		label { 
 
@@ -67,7 +70,11 @@ body {
 
 		li { 
 
+			margin: 5px 0;
+
 			a { color: white; font-size: 12px; } 
+
+			+ label { margin-top: 30px; }
 		}
 
 	}
