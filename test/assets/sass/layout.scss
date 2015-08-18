@@ -51,9 +51,10 @@ body {
 		width: 199px;
 		position: relative;
 		top: 46px;
+		display: none;
 
-		&.opened { @include fadeInUp(); }
-		&.closed { @include fadeOutDown();}
+		&.opened { @include fadeInUp(); display: block; }
+		&.closed { @include fadeOutDown(); display: block; }
 
 		label { 
 
