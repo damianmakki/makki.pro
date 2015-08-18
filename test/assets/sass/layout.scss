@@ -26,6 +26,8 @@ body {
 	z-index: 10;
 	font-size: 12px;
 
+	@include breakpoint(mobile) { left: 30px; }
+
 	.menu-burger {
 
 		background: red; 
@@ -53,7 +55,7 @@ body {
 		top: 46px;
 		display: none;
 
-		@include breakpoint(mobile) { top: 98px; }
+		@include breakpoint(mobile) { top: 88px; }
 
 		&.opened { @include fadeInUp(); display: block; }
 		&.closed { @include fadeOutDown(); display: block; }
@@ -93,8 +95,8 @@ body {
 		float: left;
 		margin: 0 2px;
 		font-weight: 100;
-		
-		@include breakpoint(mobile) { margin-top: 2px; }
+
+		@include breakpoint(mobile) { margin-top: 2px; margin-left: 0; }
 
 		&.dm { 
 
@@ -133,6 +135,8 @@ body {
 			left: 0;
 			box-shadow: 0 0 115px 30px rgba(0,0,0,.15);
 			z-index: 9;
+
+			@include breakpoint(mobile) { padding: 30px; }
 
 			.section {
 
