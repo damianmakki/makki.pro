@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	//Case Study bottom margin
 
-	var height = $('.meta').height();
-	$('.case-study').css('margin-bottom', $height);
+	var metaHeight = $('.meta').height();
+	$('.case-study').css('margin-bottom', $metaHeight);
 
 });
