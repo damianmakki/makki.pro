@@ -7,14 +7,14 @@ $(document).ready(function(){
 		arrows: 		false
 	});
 
-	$(".menu").click(function(e) {
-      if($(this).hasClass("open")) {
+	$(".menu-burger").click(function(e) {
+      if($(".menu").hasClass("open")) {
          // if it's open then just close it
-         $(this).removeClass("open");
+         $(".menu").removeClass("open");
       } else {
          // if it's closed, then close everything else and open it
-         $(".more").removeClass("open");
-         $(this).addClass("open");
+         $(".menu").removeClass("open");
+         $(".menu").addClass("open");
       }
       /* TODO: now do something similar with icon-arrow */
    });
