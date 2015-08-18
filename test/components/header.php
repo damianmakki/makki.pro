@@ -14,21 +14,21 @@
 	<div class="nav">
 
 		<div class="menu-burger" title="Menu"><img src="/test/assets/images/menu.svg" ></div>
+		<span class="dm" title="Home">Damian Makki</span>
+		<span><?php echo $pageTitle ?></span>
 		<div class="menu">
 			<ul>
 
 				<label>Projects</label>
-				<li><a href="#">Consulatation</a></li>
-				<li><a href="#">About</a></li>
-
-				<label>Projects</label>
+				<li><a href="#">Lawline</a></li>
+				<li><a href="#">Sourced Adventures</a></li>
+				<li><a href="#">Indiewalls</a></li>
+				<li><a href="#">Tequila Avion</a></li>
 				<li><a href="#">Taxi Magic</a></li>
 
 				<label>Writing</label>
 				<li><a href="#">Medium</a></li>
+				
 			</ul>
 		</div>
-		<span class="dm" title="Home">Damian Makki</span>
-		<span><?php echo $pageTitle ?></span>
-
 	</div>
