@@ -24,13 +24,12 @@
 
 	</div>
 
-	<div id="carousel">
-		<img src="images/LES.jpg">
-		<img src="images/NYCPoster.jpg">
-		<img src="images/NYCShirt.jpg">
-		<img src="images/NYCSignup.jpg">
-		<img src="images/PalmCardMockup_v1.jpg">
-	</div>
+
+	<img src="images/LES.jpg">
+	<img src="images/NYCPoster.jpg">
+	<img src="images/NYCShirt.jpg">
+	<img src="images/NYCSignup.jpg">
+	<img src="images/PalmCardMockup_v1.jpg">
 
 </div>
 

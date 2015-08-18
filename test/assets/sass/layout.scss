@@ -31,8 +31,8 @@ body {
 
 		background: red; 
 		float: left; 
-		height: 42px;
-		width: 42px;
+		height: 45px;
+		width: 45px;
 		cursor: pointer;
 		padding: 10px;
 
@@ -71,6 +71,7 @@ body {
 	margin-left: 250px;
 	padding: 150px 50px;
 	@include clearfix;
+	line-height: 1.25;
 
 	&.case-study {
 
@@ -86,7 +87,7 @@ body {
 			padding: 30px 75px;
 			bottom: 0;
 			left: 0;
-			box-shadow: 0px 0px 355px 0px rgba(0,0,0,0.25);
+			box-shadow: 0 0 115px 30px rgba(0,0,0,.15)
 			z-index: 9;
 
 			.section {
@@ -95,6 +96,8 @@ body {
 				width: auto;
 				max-width: 500px; 
 				margin-right: 100px;
+
+				@include breakpoint(mobile) { margin-bottom: 30px; }
 
 			}
 
