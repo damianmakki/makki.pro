@@ -45,6 +45,32 @@ body {
 		}
 	}
 
+	.menu { 
+
+		@include fadeInUp();
+		background: black;
+		padding: 10px;
+
+		label { 
+
+			display: block;
+			width: 100%;
+			font-weight: 700;
+			font-size: 8px;
+			margin-bottom: 10px;
+			color: white;
+			text-transform: uppercase;
+
+		}
+
+
+		li { 
+
+			a { color: white; font-size: 12px; } 
+		}
+
+	}
+
 	span {
 
 		padding: 15px 30px;
