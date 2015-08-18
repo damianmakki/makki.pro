@@ -25,11 +25,11 @@
 	</div>
 
 	<div id="carousel">
-		<img src="img/LES.jpg">
-		<img src="img/NYCPoster.jpg">
-		<img src="img/NYCShirt.jpg">
-		<img src="img/NYCSignup.jpg">
-		<img src="img/PalmCardMockup_v1.jpg">
+		<img src="images/LES.jpg">
+		<img src="images/NYCPoster.jpg">
+		<img src="images/NYCShirt.jpg">
+		<img src="images/NYCSignup.jpg">
+		<img src="images/PalmCardMockup_v1.jpg">
 	</div>
 
 </div>
