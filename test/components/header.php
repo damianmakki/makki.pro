@@ -27,7 +27,14 @@
 				<li><a href="#">Taxi Magic</a></li>
 
 				<label>Writing</label>
-				<li><a href="#">Medium</a></li>
+				<li><a href="https://medium.com/@damianmakki">Medium</a></li>
+
+				<label>Social</label>
+				<li class="social"><a href="http://www.dribbble.com/damianmakki">Dribbble</a></li>
+				<li class="social"><a href="https://twitter.com/damianmakki">Twitter</a></li>
+				<li class="social"><a href="https://instagram.com/damianmakki/">Instagram</a></li>
+				<li class="social"><a href="https://github.com/damianmakki">GitHub</a></li>
+				<li class="social"><a href="https://linkedin.com/in/damianmakki">LinkedIn</a></li>
 				
 			</ul>
 		</div>
