@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 		var $window = $(window).on('resize', function(){
 			var $metaHeight = $('.meta').height();
-			$('.case-study').css('margin-bottom', $metaHeight);
+			$('.case-study').css('margin-bottom', $metaHeight + 60);
     }).trigger('resize'); //on page load
 
 	});
