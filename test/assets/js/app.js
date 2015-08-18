@@ -7,6 +7,8 @@ $(document).ready(function(){
 		arrows: 		false
 	});
 
+
+	//Menu
 	$(".menu-burger").click(function(e) {
 		if($(".menu").hasClass("opened")) {
          // if it's open then just close it
@@ -18,5 +20,10 @@ $(document).ready(function(){
 	         $(".menu").addClass("opened");
 	     }
 	 });
+
+	//Case Study bottom margin
+
+	var height = $(".meta").height;
+	$('.case-study').css({'margin-bottom': '$height'});
 
 });
