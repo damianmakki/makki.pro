@@ -15,10 +15,10 @@ a {
 	transform: color 0.2s; 
 
 	&:hover { color: darken(red, 50%); }
-	
+
 }
 
-.pull-right { float: right; }
+.pull-right { float: right !important; }
 
 @mixin breakpoint($query) {
 
