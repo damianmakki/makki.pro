@@ -31,8 +31,8 @@ body {
 
 		background: red; 
 		float: left; 
-		height: 45px;
-		width: 45px;
+		height: 42px;
+		width: 42px;
 		cursor: pointer;
 		padding: 10px;
 
@@ -78,6 +78,10 @@ body {
 		padding: 0;
 		margin-left: 0;
 		width: 100%;
+
+		@include breakpoint(desktop) { padding: 30px 300px; margin: 190px 0; }
+
+		img { width: 100%; margin: 15px 0; }
 
 		.meta {
 

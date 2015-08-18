@@ -1,4 +1,4 @@
-<?php $pageTitle='Case Study'; ?>
+<?php $pageTitle='Taxi Magic'; ?>
 <?php $pageDescription='Damian Makki is a creative web and print designer based out of New York City.'; ?>
 
 <?php include('../../components/header.php'); ?>
