@@ -16,7 +16,7 @@
 		<div class="menu-burger" title="Menu"><img src="/test/assets/images/menu.svg" ></div>
 		<span class="dm" title="Home">Damian Makki</span>
 		<span><?php echo $pageTitle ?></span>
-		<div class="menu">
+		<div class="menu closed">
 			<ul>
 
 				<label>Projects</label>
