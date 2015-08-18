@@ -19,13 +19,4 @@ $(document).ready(function(){
 	     }
 	 });
 
-
-	$("body").click(function() {
-		$(".menu").addClass("closed");
-	});
-
-	$(".menu").click(function(e) {
-		e.stopPropagation();
-	});
-
 });
