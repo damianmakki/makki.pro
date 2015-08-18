@@ -114,7 +114,12 @@ body {
 
 			}
 
-			p { font-size: 12px;  + label { margin-top: 30px; }}
+			p { 
+				font-size: 12px; 
+
+				+ label { margin-top: 30px; }
+				
+			}
 
 		}
 	}
