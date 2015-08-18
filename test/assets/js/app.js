@@ -8,15 +8,15 @@ $(document).ready(function(){
 	});
 
 	$(".menu-burger").click(function(e) {
-      if($(".menu").hasClass("open")) {
+      if($(".menu").hasClass("opened")) {
          // if it's open then just close it
-         $(".menu").removeClass("open");
+         $(".menu").removeClass("opened");
+         $(".menu").addClass("closed");
       } else {
          // if it's closed, then close everything else and open it
-         $(".menu").removeClass("open");
-         $(".menu").addClass("open");
+         $(".menu").removeClass("closed");
+         $(".menu").addClass("opened");
       }
-      /* TODO: now do something similar with icon-arrow */
    });
 
 });

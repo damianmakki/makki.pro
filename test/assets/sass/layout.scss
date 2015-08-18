@@ -47,12 +47,14 @@ body {
 
 	.menu { 
 
-		@include fadeInUp();
 		background: #272727;
 		padding: 30px;
 		width: 199px;
 		position: relative;
 		top: 46px;
+
+		&.opened { @include fadeInUp(); }
+		&.closed { @include fadeOutDown();}
 
 		label { 
 
