@@ -14,7 +14,7 @@ $(document).ready(function(){
          // if it's open then just close it
          $(".menu").removeClass("opened");
          $(".menu").addClass("closed");
-	     } else {
+     } else {
 	         // if it's closed, then close everything else and open it
 	         $(".menu").removeClass("closed");
 	         $(".menu").addClass("opened");
@@ -22,8 +22,18 @@ $(document).ready(function(){
 	 });
 
 	//Case Study bottom margin
+	$(function(){
 
-	var metaHeight = $('.meta').height();
-	$('.case-study').css('margin-bottom', $metaHeight);
+		var $metaHeight = $('.meta').height();
+		$('.case-study').css('margin-bottom', $metaHeight);
+
+		var $window = $(window).on('resize', function(){
+			var $metaHeight = $('.meta').height();
+			$('.case-study').css('margin-bottom', $metaHeight);
+    }).trigger('resize'); //on page load
+
+	});
+
+	
 
 });
