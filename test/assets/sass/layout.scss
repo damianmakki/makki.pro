@@ -61,6 +61,8 @@ body {
 			margin-left: 0; 
 			font-weight: 700;
 
+			@include breakpoint(mobile) { content: 'DM'; }
+
 		}
 	}
 }
@@ -99,7 +101,10 @@ body {
 				max-width: 500px; 
 				margin-right: 100px;
 
-				@include breakpoint(mobile) { margin-bottom: 30px; }
+				&.pull-right { float: right; margin-right: 0; }
+
+				@include breakpoint(mobile) { margin-bottom: 30px; max-width: 100%; }
+				@include breakpoint(tablet) { margin-bottom: 30px; max-width: 100%; }
 
 			}
 
