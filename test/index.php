@@ -4,7 +4,7 @@
 <?php include('components/header.php'); ?>
 
 <div class="sidebar"></div>
-<div class="content">
+<div class="content home">
 
 	<h1>I'm Damian - independent web and print designer based out of New York City.</h1>
 

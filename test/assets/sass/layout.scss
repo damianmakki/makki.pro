@@ -4,6 +4,7 @@ body {
 	font-family: 'Gotham', Helvetica, sans-serif;
 	font-weight: 400;
 	background: white;
+
 }
 
 * { box-sizing: border-box; }
@@ -14,18 +15,20 @@ body {
 	width: 250px; 
 	height: 100vh; 
 	position: fixed; 
-	background: url('../images/captain.jpg') no-repeat;
+	background: url(../images/captain.jpg) center center;
+	background-size: cover;
 
 	&:before {
 
 		content: '';
 		position: absolute;
 		top: 0;
-		left: 0;
 		right: 0;
 		left: 0;
-		background: transparentize($black, 0.7);
-
+		background: transparentize($black, 0.2);
+		z-index: 1;
+		height: 100%;
+		
 	}
 
 }
@@ -129,6 +132,21 @@ body {
 	@include clearfix;
 	line-height: 1.25;
 
+	&.home {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		h1 { 
+
+			font-size: 48px;
+			max-width: 680px;
+			margin: 0 auto;
+
+		}
+	}
+
 	&.case-study {
 
 		padding: 0;
@@ -143,7 +161,7 @@ body {
 			display: block;
 
 			&.bleed { width: 100%; max-width: 2000px; }
-			
+
 		}
 
 		.meta {
