@@ -201,6 +201,7 @@ body {
 
 			@include breakpoint(mobile) { display: static; }
 			@include breakpoint(tablet) { display: none; }
+			@include breakpoint(tabletXL) { display: none; }
 			@include breakpoint(desktop) { display: none; }
 
 			&:after {content:'DETAILS'}
