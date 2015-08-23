@@ -1,7 +1,8 @@
 <?php $pageTitle='Sourced Adventures'; ?>
 <?php $pageDescription='Damian Makki is a creative web and print designer based out of New York City.'; ?>
 
-<?php include('../../components/header.php'); ?>
+<?php $root = $_SERVER['DOCUMENT_ROOT'] . '/makki';?>
+<?php include($root . '/../components/header.php'); ?>
 
 <div class="content case-study">
 
