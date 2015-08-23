@@ -1,5 +1,6 @@
 @import 'credit';
-@import 'bootstrap';
-@import 'bootstrap-responsive';
-@import 'font-awesome.min';
-@import 'app';
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+@import 'vendor/main';
+@import 'layout';

@@ -25,6 +25,9 @@ gulp.task('buildCSSdev', ['buildCSS'], function () {
 });
 
 
+
+
 gulp.task('default', function () {
+  livereload.listen();
   gulp.watch(fromRoot('assets/sass/**/*.scss'), ['buildCSSdev']);
 });

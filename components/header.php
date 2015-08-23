@@ -1,49 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title><?php echo $pageTitle ?> | Damian Makki</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php echo $pageDescription ?>">
-    <meta name="author" content="Damian Makki">
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title><?php echo $pageTitle ?> | Designer and Developer</title>
+	<meta name="description" content="<?php echo $pageDescription ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS -->
-    <link href="http://www.makki.pro/assets/css/style.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/test/assets/css/style.css">
+</head>
+<body>
 
-    <!-- jQuery (1.9.1) -->
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<div class="nav">
 
-	<!--Modernizr-->
-	<script src="http://www.makki.pro/assets/js/modernizr.js"></script>
+		<div class="menu-burger" title="Menu"><img src="/test/assets/images/menu.svg" ></div>
+		<span class="dm" title="Home">Damian Makki</span>
+		<span><?php echo $pageTitle ?></span>
+		<div class="menu">
+			<ul>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="/assets/js/html5shiv.js"></script>
-    <![endif]-->
+				<label>Projects</label>
+				<li><a href="/projects/lawline">Lawline</a></li>
+				<li><a href="/projects/sourced-adventures">Sourced Adventures</a></li>
+				<li><a href="/projects/indiewalls">Indiewalls</a></li>
+				<li><a href="/projects/taxi-magic">Taxi Magic</a></li>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="http://www.makki.pro/img/favicon.ico">
+				<label>Writing</label>
+				<li><a href="https://medium.com/@damianmakki">Medium</a></li>
 
-  </head>
-
-  <body>
-
-	<div class="navbar navbar-fixed-top">
-			<div class="container">
-				<div class="row.logo">
-					<div class="span3 logo"><a href="http://www.makki.pro/"><img src="http://www.makki.pro/img/dm.svg"></a></div>
-				</div>
-						<div class="row logo main-nav">
-							<div class="span2 first label"><a id="featured-work-a" href="#featured-work"><li>featured work</li></a></div>
-							<div class="span2 offset1 label"><a id="latest-work-a" href="#latest-work"><li>latest work</li></a></div>
-							<div class="span2 offset1 label"><a id="contact-a" href="#contact"><li>contact</li></a></div>
-						</div>
-						<div class="row tagline">
-					  		<div class="span9 offset3"><h1 class="intro">Damian is an independent creative web and print designer based out of New York City.</h1></div>
-				  		</div>
-			  		</div>
-		  		</div>
-		  	</div>
-	  </div>
+				<label>Social</label>
+				<li class="social"><a href="http://www.dribbble.com/damianmakki">Dribbble</a></li>
+				<li class="social"><a href="https://twitter.com/damianmakki">Twitter</a></li>
+				<li class="social"><a href="https://instagram.com/damianmakki/">Instagram</a></li>
+				<li class="social"><a href="https://github.com/damianmakki">GitHub</a></li>
+				<li class="social"><a href="https://linkedin.com/in/damianmakki">LinkedIn</a></li>
+				
+			</ul>
+		</div>
+	</div>
