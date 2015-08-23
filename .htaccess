@@ -9,4 +9,4 @@ rewritecond $1 !^(index\.php|robots\.txt|index\.md)
 rewriterule ^(.*)$ index.php?/$1 [L]
 
 ErrorDocument 404 404.php
-Header set Access-Control-Allow-Origin "http://www.makki.pro"
+Access-Control-Allow-Origin: http://www.makki.pro http://makki.pro makki.pro www.makki.pro
