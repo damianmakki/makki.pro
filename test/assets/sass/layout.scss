@@ -189,7 +189,8 @@ body {
 			left: 0;
 			bottom: 0;
 			padding: 10px 20px;
-			background-color: #fff;
+			background: $red;
+			color: white;
 			transition: bottom .5s;
 			z-index: 10;
 			text-transform: uppercase;

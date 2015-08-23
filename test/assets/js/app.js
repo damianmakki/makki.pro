@@ -29,6 +29,8 @@ $(document).ready(function(){
 
 		$('.meta-tab').on('click', function(){
 			$(this).toggleClass('active');
+			$(this).css('bottom', $metaHeight);
+			$('.content.case-study .meta-tab.active+.meta').css('max-height', $metaHeight);
 		});
 
 		var $window = $(window).on('resize', function(){
