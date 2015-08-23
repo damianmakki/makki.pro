@@ -185,10 +185,12 @@ body {
 
 		.meta-tab {
 
-			position: absolute;
+			position: fixed;
 			left: 0;
 			bottom: 0;
-			padding: 10px 20px;
+			padding: 20px;
+			text-align: center;
+			width: 100%;
 			background: $red;
 			color: white;
 			transition: bottom .5s;
@@ -221,8 +223,7 @@ body {
 			left: 0;
 			right: 0;
 			bottom: 0;
-			max-height: 0px;
-			transition: max-height 0.5s;
+			transition: bottom 0.5s;
 
 			@include breakpoint(mobile) { padding: 30px; }
 
