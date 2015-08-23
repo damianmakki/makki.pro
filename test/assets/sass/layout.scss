@@ -188,7 +188,7 @@ body {
 			position: fixed;
 			left: 0;
 			bottom: 0;
-			padding: 5px 10px;
+			padding: 20px;
 			background-color: $red;
 			color: white;
 			width: 100%;
@@ -198,11 +198,15 @@ body {
 			transition: bottom 0.5s;
 			z-index: 10;
 
+			&:after {content:'DETAILS'}
+
 			&.active { 
 
 				bottom: 300px; 
 
-				+.meta { height: auto; bottom: 0; }
+				&:after {content:'CLOSE DETAILS'}
+
+				+.meta { max-height: 3000px; }
 
 			}
 		}
@@ -221,8 +225,8 @@ body {
 			left: 0;
 			right: 0;
 			bottom: -30px;
-			height: 0;
-			transition: height 0.5s;
+			max-height: 0;
+			transition: max-height 0.5s;
 
 			@include breakpoint(mobile) { padding: 30px; }
 
