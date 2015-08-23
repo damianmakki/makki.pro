@@ -185,7 +185,7 @@ body {
 
 		.meta-tab {
 
-			position: fixed;
+			/*position: fixed;
 			left: 0;
 			bottom: 0;
 			padding: 20px;
@@ -197,13 +197,13 @@ body {
 			z-index: 10;
 			text-transform: uppercase;
 			font-size: 12px;
-			font-weight: 700;
+			font-weight: 700;*/
 
 		}
 
 		.meta {
 
-			background: white;
+			/*background: white;
 			position: fixed;
 			width: 100%;
 			bottom: 0;
@@ -213,7 +213,7 @@ body {
 			z-index: 9;
 			transition: bottom 0.5s;
 
-			@include breakpoint(mobile) { padding: 30px; }
+			@include breakpoint(mobile) { padding: 30px; } */
 
 			.section {
 
