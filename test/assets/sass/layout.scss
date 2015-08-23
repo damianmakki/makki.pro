@@ -18,6 +18,8 @@ body {
 	background: url(../images/captain.jpg) center center;
 	background-size: cover;
 
+	@include breakpoint (mobile) { width: 100%; position: relative; }
+
 	&:before {
 
 		content: '';
@@ -30,7 +32,6 @@ body {
 		height: 100%;
 		
 	}
-
 }
 
 .nav { 
@@ -139,12 +140,23 @@ body {
 		justify-content: center;
 		height: 100vh;
 
+		@include breakpoint (mobile) {
+
+			margin-left: 0; 
+			height: auto;
+			width: 100%;
+			float: left;
+
+		}
+
 		h1 { 
 
 			font-size: 60px;
 			max-width: 680px;
 			margin: 0 auto;
 			font-weight: 200;
+
+			@include breakpoint (mobile) {font-size: 30px; }
 
 		}
 	}
