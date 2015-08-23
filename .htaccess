@@ -8,5 +8,9 @@ rewritecond %{REQUEST_FILENAME} !-d
 rewritecond $1 !^(index\.php|robots\.txt|index\.md)
 rewriterule ^(.*)$ index.php?/$1 [L]
 
+#Redirect to www
+RewriteCond %{HTTP_HOST} ^domain\.com
+RewriteRule ^(.*)$ http://www.domain.com/$1 [R=permanent,L]
+
 ErrorDocument 404 404.php
 Access-Control-Allow-Origin: http://www.makki.pro http://makki.pro makki.pro www.makki.pro
