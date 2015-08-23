@@ -185,7 +185,7 @@ body {
 
 		.meta-tab {
 
-			position: fixed;
+			position: absolute;
 			left: 0;
 			bottom: 0;
 			padding: 20px;
@@ -211,18 +211,13 @@ body {
 		.meta {
 
 			background: white;
-			/*position: fixed;
+			position: fixed;
 			width: 100%;
 			bottom: 0;
-			left: 0;*/
+			left: 0;
 			padding: 30px 75px;
 			box-shadow: 0 0 115px 30px rgba(0,0,0,.15);
 			z-index: 9;
-
-			position: fixed;
-			left: 0;
-			right: 0;
-			bottom: 0;
 			transition: bottom 0.5s;
 
 			@include breakpoint(mobile) { padding: 30px; }
