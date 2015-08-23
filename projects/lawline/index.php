@@ -1,7 +1,7 @@
 <?php $pageTitle='Lawline'; ?>
 <?php $pageDescription='Damian was the lead designer at Lawline - a legal education startup based out of New York City.'; ?>
 
-<?php include('../../../components/header.php'); ?>
+<?php include('/components/header.php'); ?>
 
 <div class="content case-study">
 
@@ -35,4 +35,4 @@
 
 </div>
 
-<?php include('../../../components/footer.php'); ?>
+<?php include('/components/footer.php'); ?>
