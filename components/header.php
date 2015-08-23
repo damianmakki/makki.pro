@@ -7,23 +7,23 @@
 	<meta name="description" content="<?php echo $pageDescription ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="/test/assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
 	<div class="nav">
 
-		<div class="menu-burger" title="Menu"><img src="/test/assets/images/menu.svg" ></div>
+		<div class="menu-burger" title="Menu"><img src="../assets/images/menu.svg" ></div>
 		<span class="dm" title="Home">Damian Makki</span>
 		<span><?php echo $pageTitle ?></span>
 		<div class="menu">
 			<ul>
 
 				<label>Projects</label>
-				<li><a href="/projects/lawline">Lawline</a></li>
-				<li><a href="/projects/sourced-adventures">Sourced Adventures</a></li>
-				<li><a href="/projects/indiewalls">Indiewalls</a></li>
-				<li><a href="/projects/taxi-magic">Taxi Magic</a></li>
+				<li><a href="../projects/lawline">Lawline</a></li>
+				<li><a href="../projects/sourced-adventures">Sourced Adventures</a></li>
+				<li><a href="../projects/indiewalls">Indiewalls</a></li>
+				<li><a href="../projects/taxi-magic">Taxi Magic</a></li>
 
 				<label>Writing</label>
 				<li><a href="https://medium.com/@damianmakki">Medium</a></li>
