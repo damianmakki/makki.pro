@@ -30,7 +30,7 @@ $(document).ready(function(){
 		$('.meta-tab').on('click', function(){
 			$(this).toggleClass('active');
 			$(this).css('bottom', $metaHeight + 60);
-			$('.content.case-study .meta-tab.active+.meta').css('bottom', $metaHeight + 60);
+			$('.meta-tab.active+.meta').css('bottom', $metaHeight + 60);
 		});
 
 		var $window = $(window).on('resize', function(){
