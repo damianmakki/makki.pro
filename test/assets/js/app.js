@@ -27,12 +27,17 @@ $(document).ready(function(){
 		var $metaHeight = $('.meta').height();
 		$('.case-study').css('margin-bottom', $metaHeight);
 
+		$('.meta-tab').on('click', function(){
+			$(this).toggleClass('active');
+		});
+
 		var $window = $(window).on('resize', function(){
 			var $metaHeight = $('.meta').height();
 			$('.case-study').css('margin-bottom', $metaHeight + 60);
     }).trigger('resize'); //on page load
 
 	});
+
 
 	
 
