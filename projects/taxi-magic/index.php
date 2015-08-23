@@ -26,8 +26,8 @@
 		</div>
 
 		<div class="section pull-right">
-			<label>Next Project</label>
-			<p><a href="/projects/tequila-avion">Tequila Avión</a></p>
+			<label>Previous Project</label>
+			<p><a href="/projects/indiewalls">Indiewalls</a></p>
 			<label>Want Even More?</label>
 			<p><a href="http://www.dribbble.com/damianmakki">Dribbble</a></p>
 		</div>

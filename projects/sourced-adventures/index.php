@@ -27,7 +27,7 @@
 			<label>Next Project</label>
 			<p><a href="/projects/indiewalls">Indiewalls</a></p>
 			<label>Previous Project</label>
-			<p><a href="../projects/lawline">Lawline</a></p>
+			<p><a href="/projects/lawline">Lawline</a></p>
 		</div>
 
 	</div>

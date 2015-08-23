@@ -27,7 +27,7 @@
 
 		<div class="section pull-right">
 			<label>Next Project</label>
-			<p><a href="../project/sourced-adventures">Sourced Adventures</a></p>
+			<p><a href="/projects/sourced-adventures">Sourced Adventures</a></p>
 		</div>
 
 	</div>
@@ -38,4 +38,4 @@
 
 </div>
 
-<?php include('/components/footer.php'); ?>
+<?php include('../../components/footer.php'); ?>
