@@ -137,12 +137,14 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: 100vh;
 
 		h1 { 
 
-			font-size: 48px;
+			font-size: 60px;
 			max-width: 680px;
 			margin: 0 auto;
+			font-weight: 200;
 
 		}
 	}

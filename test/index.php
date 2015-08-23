@@ -6,7 +6,7 @@
 <div class="sidebar"></div>
 <div class="content home">
 
-	<h1>I'm Damian - independent web and print designer based out of New York City.</h1>
+	<h1>I'm Damian.<br> An independent web and print designer currently based out of New York City.</h1>
 
 </div>
 
