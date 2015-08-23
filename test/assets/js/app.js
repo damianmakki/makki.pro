@@ -47,9 +47,9 @@ $(document).ready(function(){
 
 		$(".meta-tab").click(function(){
 			if($(this).hasClass('active')) {
-				$(this).animate({height:$metaHeight},200).removeClass('active');
+				$(this).css({'bottom', $metaHeight).removeClass('active');
 			} else { 
-				$(this).animate({height:10},200).addClass('active');
+				$(this).css('bottom', '0').addClass('active');
 			}
 		});
 	});
