@@ -1,6 +1,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script src="/test/assets/js/slick.min.js"></script>
-	<script src="/test/assets/js/app.js"></script>
+	<script src="../assets/js/slick.min.js"></script>
+	<script src="../assets/js/app.js"></script>
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">
