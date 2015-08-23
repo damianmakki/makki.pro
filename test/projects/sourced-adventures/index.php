@@ -31,13 +31,9 @@
 
 	</div>
 
-	<img src="http://www.placehold.it/200x200">
-	<img src="http://www.placehold.it/300x300">
-	<img src="http://www.placehold.it/400x400">
-	<img src="http://www.placehold.it/500x500">
-	<img src="http://www.placehold.it/600x600">
-	<img src="http://www.placehold.it/700x700">
-	<img src="http://www.placehold.it/800x800">
+	<img class="bleed" src="images/1.jpg">
+	<img src="images/2.jpg">
+	<img src="images/3.jpg">
 
 </div>
 
