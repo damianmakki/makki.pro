@@ -34,13 +34,10 @@ $(document).ready(function(){
 
 	});
 
-	(function($) {
+	$(function(){
 		$('.meta-tab').bind('click', function() {
 			$('.meta').toggleClass('active');
 		});
-	})
-
-
-	
+	});
 
 });
