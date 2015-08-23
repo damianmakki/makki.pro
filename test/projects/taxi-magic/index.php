@@ -5,11 +5,9 @@
 
 <div class="content case-study">
 
+	<span class="meta-tab">Details</span>
 	
-
 	<div class="meta">
-
-		<span class="meta-tab"><a>Details</a></span>
 
 		<div class="section">
 			<label>Year</label>
