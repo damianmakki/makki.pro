@@ -30,7 +30,7 @@
 		</div>
 	</div>
 
-	<img src="images/PalmCardMockup_v1.jpg">
+	<img class="bleed" src="images/PalmCardMockup_v1.jpg">
 	<img src="images/LES.jpg">
 	<img src="images/NYCPoster.jpg">
 	<img src="images/NYCShirt.jpg">
