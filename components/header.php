@@ -13,7 +13,7 @@
 
 	<div class="nav">
 
-		<div class="menu-burger" title="Menu"><img src="http://www.makki.pro/images/menu.svg" ></div>
+		<div class="menu-burger" title="Menu"><img src="http://www.makki.pro/assets/images/menu.svg" ></div>
 		<span class="dm" title="Home">Damian Makki</span>
 		<span><?php echo $pageTitle ?></span>
 		<div class="menu">
