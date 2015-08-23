@@ -34,6 +34,12 @@ $(document).ready(function(){
 
 	});
 
+	(function($) {
+		$('.meta-tab').bind('click', function() {
+			$('.meta').toggleClass('active');
+		});
+	})
+
 
 	
 
