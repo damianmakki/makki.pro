@@ -14,20 +14,21 @@
 
 		<div class="section">
 			<label>Roles</label>
-			<p>Designer, developer, print design.</p>
+			<p>Design and development.</p>
 		</div>
 
 		<div class="section">
 			<label>Overview</label>
-			<p>The #1 taxi-booking app in the country. Taxi Magic is one of my favorite clients. We've completed a ton of projects together and thanks to their incredible team, they're a pleasure to work with. Though this is a small sampling, we've completed a number of print projects ranging from holiday cards to custom posters, some great email campaigns, and even a launch page for their New York City launch in June, 2013.</p>
+			<p>Taxi Magic (now CURB) is a major player in the white-hot taxi/car service industry. For over two years, we produced posters, landing pages, coupon cards, and other marketing materials to help them expand their brand in different areas of the country.</p>
 		</div>
 
 		<div class="section pull-right">
 			<label>Next Project</label>
-			<p><a href="#">Taxi Magic</a></p>
-			<label>Previous Project</label>
-			<p><a href="#">Tequila Avion</a></p>
+			<p><a href="/projects/tequila-avion">Tequila Avión</a></p>
+			<label>Want Even More?</label>
+			<p><a href="http://www.dribbble.com/damianmakki">Dribbble</a></p>
 		</div>
+
 	</div>
 
 	<img class="bleed" src="images/PalmCardMockup_v1.jpg">
