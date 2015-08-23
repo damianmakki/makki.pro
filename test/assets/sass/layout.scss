@@ -18,7 +18,7 @@ body {
 	background: url(../images/captain.jpg) center center;
 	background-size: cover;
 
-	@include breakpoint (mobile) { width: 100%; position: relative; }
+	@include breakpoint (mobile) { width: 100%; position: relative; height: 60vh; }
 
 	&:before {
 
@@ -52,6 +52,8 @@ body {
 		width: 42px;
 		cursor: pointer;
 		padding: 10px;
+
+		@include breakpoint(mobile) { margin-top: 2px; }
 
 		img { 
 
@@ -121,6 +123,8 @@ body {
 			font-weight: 700;
 			margin-top: 0;
 
+			@include breakpoint(mobile) { margin-top: 2px; }
+
 		}
 	}
 }
@@ -146,6 +150,7 @@ body {
 			height: auto;
 			width: 100%;
 			float: left;
+			padding: 50px;
 
 		}
 
