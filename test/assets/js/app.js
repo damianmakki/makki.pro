@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 	});
 
-	$function() {
+	$(function() {
 		$('.meta-tab').on('click', function() {
 			$(this).toggleClass('active');
 		});
