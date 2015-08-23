@@ -14,7 +14,19 @@ body {
 	width: 250px; 
 	height: 100vh; 
 	position: fixed; 
-	background: #272727;
+	background: url('../images/captain.jpg') no-repeat;
+
+	&:before {
+
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		left: 0;
+		background: transparentize($black, 0.7);
+
+	}
 
 }
 
@@ -30,7 +42,7 @@ body {
 
 	.menu-burger {
 
-		background: red; 
+		background: $red; 
 		float: left; 
 		height: 42px;
 		width: 42px;
@@ -48,7 +60,7 @@ body {
 
 	.menu { 
 
-		background: #272727;
+		background: $black;
 		padding: 30px;
 		width: 199px;
 		position: absolute;
@@ -89,7 +101,7 @@ body {
 	span {
 
 		padding: 15px 30px;
-		background: #272727;
+		background: $black;
 		color: white;
 		display: block;
 		float: left;
