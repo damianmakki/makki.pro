@@ -127,7 +127,8 @@ body {
 
 			width: 100%; 
 			max-width: 580px; 
-			margin: 0 auto 30px auto;
+			margin: 0 auto 30px;
+			display: block;
 
 			&.bleed { width: 100%; max-width: 2000px; }
 		}
