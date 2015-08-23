@@ -199,13 +199,17 @@ body {
 			transition: bottom 0.5s;
 			z-index: 10;
 
+			@include breakpoint(mobile) { display: static; }
+			@include breakpoint(talet) { display: none; }
+			@include breakpoint(desktop) { display: none; }
+
 			&:after {content:'DETAILS'}
 
 			&.active { 
 
 				&:after {content:'CLOSE DETAILS'}
 
-				+.meta { max-height: 3000px; }
+				+.meta { max-height: 3000px; bottom: 0; }
 
 			}
 		}
@@ -213,21 +217,24 @@ body {
 		.meta {
 
 			background: white;
-			/*position: fixed;
+			position: fixed;
 			width: 100%;
 			bottom: 0;
 			left: 0;*/
 			padding: 30px 75px;
 			box-shadow: 0 0 115px 30px rgba(0,0,0,.15);
 			z-index: 9;
-			position: fixed;
-			left: 0;
-			right: 0;
-			bottom: -30px;
-			max-height: 0;
-			transition: max-height 0.5s;
 
-			@include breakpoint(mobile) { padding: 30px; }
+			@include breakpoint(mobile) { 
+
+				padding: 30px; 
+				left: 0;
+				right: 0;
+				bottom: -30px;
+				max-height: 0;
+				transition: max-height 0.5s;
+
+			}
 
 			.section {
 
