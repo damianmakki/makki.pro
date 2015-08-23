@@ -201,7 +201,7 @@ body {
 
 			@include breakpoint(mobile) { display: static; }
 			@include breakpoint(tablet) { display: static; }
-			@include breakpoint(tabletXL) { display: static; }
+			@include breakpoint(tabletXL) { display: none; }
 			@include breakpoint(desktop) { display: none; }
 
 			&:after {content:'DETAILS'}
@@ -248,17 +248,6 @@ body {
 
 			}
 
-			@include breakpoint(tabletXL) { 
-
-				padding: 30px; 
-				left: 0;
-				right: 0;
-				bottom: -30px;
-				max-height: 0;
-				transition: max-height 0.5s;
-
-			}
-
 
 			.section {
 
@@ -267,11 +256,19 @@ body {
 				max-width: 500px; 
 				margin-right: 100px;
 
-				&.pull-right { float: right; margin-right: 0; }
+				&.pull-right { 
+
+					float: right; 
+					margin-right: 0; 
+
+					@include breakpoint(mobile) { float: left; }
+					@include breakpoint(tablet) { float: left; }
+
+				}
 
 				@include breakpoint(mobile) { margin-bottom: 30px; max-width: 100%; width: 100%; }
-				@include breakpoint(tablet) { margin-bottom: 30px; max-width: 100%; width: 100%; }
-				@include breakpoint(tabletXL) { margin-bottom: 30px; max-width: 100%; width: 100%; }
+				@include breakpoint(tablet) { margin-bottom: 30px; }
+				@include breakpoint(tabletXL) { margin-bottom: 30px; }
 
 			}
 
