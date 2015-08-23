@@ -200,7 +200,7 @@ body {
 			z-index: 10;
 
 			@include breakpoint(mobile) { display: static; }
-			@include breakpoint(talet) { display: none; }
+			@include breakpoint(tablet) { display: none; }
 			@include breakpoint(desktop) { display: none; }
 
 			&:after {content:'DETAILS'}
@@ -209,7 +209,7 @@ body {
 
 				&:after {content:'CLOSE DETAILS'}
 
-				+.meta { max-height: 3000px; bottom: 0; }
+				+.meta { max-height: 3000px; bottom: 30px; }
 
 			}
 		}
