@@ -20,11 +20,10 @@
 			<ul>
 
 				<label>Projects</label>
-				<li><a href="../projects/lawline">Lawline</a></li>
-				<li><a href="../projects/sourced-adventures">Sourced Adventures</a></li>
-				<li><a href="../projects/indiewalls">Indiewalls</a></li>
-				<li><a href="../projects/taxi-magic">Taxi Magic</a></li>
-				<li><a href="../projects/tequila-avion">Tequila Avión</a></li>
+				<li><a href="/projects/lawline">Lawline</a></li>
+				<li><a href="/projects/sourced-adventures">Sourced Adventures</a></li>
+				<li><a href="/projects/indiewalls">Indiewalls</a></li>
+				<li><a href="/projects/taxi-magic">Taxi Magic</a></li>
 
 				<label>Writing</label>
 				<li><a href="https://medium.com/@damianmakki">Medium</a></li>
