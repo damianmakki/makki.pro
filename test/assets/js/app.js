@@ -34,9 +34,23 @@ $(document).ready(function(){
 
 	});
 
-	$(function() {
+	/*$(function() {
 		$('.meta-tab').on('click', function() {
 			$(this).toggleClass('active');
+			$(this).css
+		});
+	});*/
+
+	$(document).ready(function(){
+
+		var $metaHeight = $('.meta').height();
+
+		$(".meta-tab").click(function(){
+			if($(this).hasClass('active')) {
+				$(this).animate({height:$metaHeight},200).removeClass('active');
+			} else { 
+				$(this).animate({height:10},200).addClass('active');
+			}
 		});
 	});
 

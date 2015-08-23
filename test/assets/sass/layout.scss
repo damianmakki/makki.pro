@@ -194,6 +194,7 @@ body {
 			width: 100%;
 			text-transform: uppercase;
 			font-weight: 700;
+			text-align: center;
 			font-size: 12px;
 			transition: bottom 0.5s;
 			z-index: 10;
@@ -201,8 +202,6 @@ body {
 			&:after {content:'DETAILS'}
 
 			&.active { 
-
-				bottom: 300px; 
 
 				&:after {content:'CLOSE DETAILS'}
 
