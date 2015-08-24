@@ -5,6 +5,8 @@
 
 <div class="content case-study">
 
+	<span class="meta-tab"></span>
+
 	<div class="meta">
 
 		<div class="section">
