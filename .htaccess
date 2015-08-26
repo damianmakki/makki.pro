@@ -7,6 +7,6 @@ rewritecond %{REQUEST_FILENAME} !-f
 rewritecond %{REQUEST_FILENAME} !-d
 rewritecond $1 !^(index\.php|robots\.txt|index\.md)
 rewriterule ^(.*)$ index.php?/$1 [L]
+Header add Access-Control-Allow-Origin "*" 
+ErrorDocument 404 /404.html
 
-ErrorDocument 404 404.php
-Header set Access-Control-Allow-Origin "*"
