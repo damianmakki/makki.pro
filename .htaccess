@@ -1,17 +1,18 @@
 RewriteEngine On
 
 DirectoryIndex index.html index.php
+
+#Apache config
+<FilesMatch ".(eot|ttf|otf|woff)">
+	Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
 RewriteBase /
 #Redirects July 18, 2013
 rewritecond %{REQUEST_FILENAME} !-f
 rewritecond %{REQUEST_FILENAME} !-d
 rewritecond $1 !^(index\.php|robots\.txt|index\.md)
 rewriterule ^(.*)$ index.php?/$1 [L]
-
-#Apache config
-<FilesMatch ".(eot|ttf|otf|woff)">
-	Header set Access-Control-Allow-Origin "*"
-</FilesMatch>
 
 ErrorDocument 404 /404.html
 
