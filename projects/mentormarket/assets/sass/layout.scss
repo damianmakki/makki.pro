@@ -1,0 +1,112 @@
+body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-align: text-bottom; }
+* {box-sizing: border-box; }
+
+.section {
+
+	height: 100vh;
+	background: white;
+	padding: 5% 0;
+	box-sizing: content-box;
+	position: relative;
+
+	&.hero {
+
+		background-image: url(../images/double-exposure-suit.jpg);
+		background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: -500px;
+
+    	h1 { font-size: 92px; float: right; text-transform: uppercase; font-weight: 100; margin-top: 100px; text-align: right; clear: both; margin-right: 5%;}
+
+    	form { float: right; clear: both; margin-top: 50px; width: 350px; margin-right: 5%; }
+
+    	p { float: right; text-align: right; font-size: 24px; margin-top: 25px; clear: both; margin-right: 5%; }
+
+    	.subtext { font-size: 12px; color: $gray; text-align: center; }
+
+	}
+
+	&.discovery { 
+
+		img.mockup { 
+
+			width: 800px;
+			max-width: 100%;
+		    margin: 0 auto;
+		    display: block;
+		    margin-top: 50px;
+		    position: relative;
+		    top: 100px; 
+
+		} 
+
+		p { margin-top: 20px; }
+
+		p+p { margin-top: 20px; }
+
+		#left-mentor, #left-mentee { opacity: 0.5; margin: 20px 0; cursor: pointer; &.active { opacity: 1; } }
+
+		.active { opacity: 1; }
+
+		.inactive { display: none; }
+	}
+
+	&.notify { 
+
+		padding: 10%; 
+
+		p { text-align: center; max-width: 700px; margin: 0 auto; }
+
+		form { margin: 0 auto; width: 500px; display: block; margin-top: 100px; float: none; } 
+
+	}
+
+	&.communication { 
+
+		img.main { position: absolute; max-width: 600px; }
+
+	}
+
+	&:nth-child(even) { background: $black; color: white; }
+
+	.section-header {
+		
+		h2 { width: 85%; color: white; height: 75px; background: $yellow; padding: 20px; text-transform: uppercase; text-align: right; font-size: 40px; float: left; margin-bottom: 10%; font-weight: 100; }
+
+		img { float: right; clear: none; margin-right: 5%; width: 75px; height: 75px; }
+
+	}
+
+	h3 { font-size: 30px; font-weight: 600; margin-bottom: 20px; }
+
+	h4 { font-size: 50px; font-weight: 100; text-transform: uppercase; text-align: center; margin-bottom: 50px;  }
+
+	p { font-size: 18px; max-width: 500px; font-weight: 100; +p { margin-top: 25px;  } }
+
+	.half { 
+
+		float: left; 
+		width: 50%; 
+
+		&-right { @extend .half; float: right; padding: 0 5%; } 
+
+		&-left { 
+
+			@extend .half; 
+			text-align: right; 
+
+			p { font-size: 24px; font-weight: 700; } 
+
+		}
+	}
+}
+
+#mm {
+
+	position: absolute;
+	top: 0; 
+	right: 5%;
+
+	img { width: 80%; }
+
+}
