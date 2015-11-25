@@ -98,7 +98,7 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 		float: left; 
 		width: 50%; 
 
-		&-right { @extend .half; float: right; padding: 0 5%; } 
+		&-right { @extend .half; float: right; padding: 0 5%; p { float: left !important; } } 
 
 		&-left { 
 
