@@ -28,6 +28,8 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 
 	&.discovery { 
 
+		min-height: 800px;
+
 		img.mockup { 
 
 			width: 800px;
@@ -67,6 +69,14 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 
 	}
 
+	&.value {
+
+		.right { text-align: right; }
+
+		img.main { position: relative; left: -20px; width: 425px; top: -50px; }
+
+	}
+
 	&:nth-child(even) { background: $black; color: white; }
 
 	.section-header {
@@ -95,9 +105,9 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 			@extend .half; 
 			text-align: right; 
 
-			p { font-size: 24px; font-weight: 700; } 
-
 		}
+
+		p { float: right; }
 	}
 }
 
