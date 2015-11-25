@@ -14,10 +14,5 @@ rewritecond %{REQUEST_FILENAME} !-d
 rewritecond $1 !^(index\.php|robots\.txt|index\.md)
 rewriterule ^(.*)$ index.php?/$1 [L]
 
-AuthType Basic
-AuthName "Password Protected Area"
-AuthUserFile /var/www/html/projects/mentormarket/.htpasswd
-Require valid-user
-
 ErrorDocument 404 /404.html
 
