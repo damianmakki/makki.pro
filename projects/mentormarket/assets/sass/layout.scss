@@ -4,6 +4,7 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 .section {
 
 	height: 100vh;
+	min-height: 750px;
 	background: white;
 	padding: 5% 0;
 	box-sizing: content-box;
@@ -28,7 +29,7 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 
 	&.discovery { 
 
-		min-height: 800px;
+		min-height: 1250px;
 
 		img.mockup { 
 
@@ -65,7 +66,9 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 
 	&.communication { 
 
-		img.main { position: absolute; max-width: 600px; }
+		img.main { position: absolute; top: 200px; max-width: 600px; }
+
+		max-height: 800px;
 
 	}
 
@@ -73,7 +76,7 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 
 		.right { text-align: right; }
 
-		img.main { position: relative; left: -20px; width: 425px; top: -50px; }
+		img.main { position: relative; left: 125px; width: 600px; top: -50px; }
 
 	}
 
