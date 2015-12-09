@@ -4,8 +4,8 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 
 .section {
 
-	height: 100vh;
-	min-height: 750px;
+	height: auto;
+	min-height: 100vh;
 	background: white;
 	padding: 5% 0;
 	box-sizing: content-box;
