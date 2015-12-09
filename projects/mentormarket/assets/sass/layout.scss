@@ -1,4 +1,5 @@
 body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-align: text-bottom; }
+
 * {box-sizing: border-box; }
 
 .section {
@@ -10,28 +11,32 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 	box-sizing: content-box;
 	position: relative;
 
-	p { font-size: 24px;}
+	p { font-size: 24px; }
 
 	&.hero {
 
-    	img.mockup { 
+		min-height: 1200px;
 
-			float: left; 
-			max-width: 500px; clear: both;
+		img.mockup { 
+
+			width: 800px;
+			max-width: 100%;
+			margin: 50px auto 0;
+			display: block;
+			position: relative;
+			top: 10px;
+			border: 1px solid $gray;
 
 		} 
 
-    	h1 { font-size: 92px; float: right; text-transform: uppercase; font-weight: 100; margin-top: 100px; text-align: right; clear: both; margin-right: 5%;}
-
-    	
-
-    	.subtext { font-size: 12px; color: $gray; text-align: center; }
+		h1 { font-size: 92px; text-transform: uppercase; font-weight: 100; margin-top: 100px; text-align: center; clear: both; }
+		p { text-align: center; margin: 0 auto; width: 100%; max-width: 100%; }
 
 	}
 
 	&.discovery { 
 
-		min-height: 1250px;
+		@include clearfix;
 
 		p { margin-top: 20px; }
 
@@ -45,7 +50,17 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 
 		form { float: none; margin: 0 auto; clear: both; margin-top: 200px; width: 350px; }
 
-    	p { text-align: center; margin-top: 25px; clear: both; }
+		p { text-align: center; margin-top: 25px; clear: both; }
+
+		.subtext { 
+
+			text-align: center;
+			margin: 100px auto 30px;
+			float: left;
+			display: block;
+			max-width: 100%;
+			width: 100%; 
+		}
 
 	}
 
@@ -78,7 +93,7 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 	&:nth-child(even) { background: $black; color: white; }
 
 	.section-header {
-		
+
 		h2 { width: 85%; color: white; height: 75px; background: $yellow; padding: 20px; text-transform: uppercase; text-align: right; font-size: 40px; float: left; margin-bottom: 10%; font-weight: 100; }
 
 		img { float: right; clear: none; margin-right: 5%; width: 75px; height: 75px; }
@@ -96,7 +111,7 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 		float: left; 
 		width: 50%; 
 
-		&-right { @extend .half; float: right; padding: 0 5%; p { float: left !important; } } 
+		&-right { @extend .half; float: right; padding: 0 5%; p { float: left !important; text-align: left !important; } } 
 
 		&-left { 
 
@@ -105,7 +120,7 @@ body { font-family: 'DIN', Helvetica, sans-serif; line-height: 1.25; vertical-al
 
 		}
 
-		p { float: right; }
+		p { float: right; text-align: right; }
 	}
 }
 
