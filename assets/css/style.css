@@ -1028,6 +1028,10 @@ body {
   -webkit-clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0 90%);
   clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0 98%);
   text-align: center; }
+  @media (min-width: 0px) and (max-width: 650px) {
+    .home {
+      background-position: -460px center;
+      background-repeat: repeat; } }
   .home .container {
     margin: 0 auto; }
   .home h1 {

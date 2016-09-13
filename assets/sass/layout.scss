@@ -25,6 +25,13 @@ body {
     clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0 98%);
     text-align: center;
 
+    @include breakpoint(mobile) {
+
+    	    background-position: -460px center;
+    	    background-repeat: repeat;
+
+    }
+
 	.container { margin: 0 auto; }
 
 	h1 { font-size: 24px; font-weight: 700; text-transform: uppercase; color: white; margin-bottom: 20px; }
