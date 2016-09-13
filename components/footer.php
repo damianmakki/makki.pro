@@ -1,5 +1,3 @@
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script src="http://www.makki.pro/assets/js/slick.min.js"></script>
 	<script src="http://www.makki.pro/assets/js/app.js"></script>
 
 	<!-- Google Analytics -->

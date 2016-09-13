@@ -10,11 +10,8 @@
 
 a { 
 
-	color: red; 
-	text-decoration: none; 
-	transition: color 0.2s; 
-
-	&:hover { color: darken(red, 50%); }
+	color: white;
+	text-decoration: underline; 
 
 }
 
