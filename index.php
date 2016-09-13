@@ -1,4 +1,4 @@
-<?php $pageTitle='Designer and Developer'; ?>
+<?php $pageTitle='Damian Makki'; ?>
 <?php $pageDescription='Damian Makki is a creative web and print designer based out of New York City.'; ?>
 
 <?php include('components/header.php'); ?>
@@ -12,7 +12,7 @@
 	<div class="container">
 		<ul class="social">
 			<li><a href="https://instagram.com/damianmakki/"><img src="assets/images/instagram.svg" alt="Instagram"</a></li>
-			<li><a href="https://dribbble.com/damianmakki"><img src="assets/images/dribbble.svg" alt="Dribbble"</a></li>
+			<li><a href="https://dribbble.com/damianmakki"><img src="assets/images/Dribbble.svg" alt="Dribbble"</a></li>
 			<li><a href="https://github.com/damianmakki"><img src="assets/images/github.svg" alt="Github"</a></li>
 			<li><a href="https://www.linkedin.com/in/damianmakki"><img src="assets/images/linkedin.svg" alt="LinkedIn"</a></li>
 			<li><a href="https://www.strava.com/athletes/6190541"><img src="assets/images/strava.svg" alt="Strava"</a></li>
