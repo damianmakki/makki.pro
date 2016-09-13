@@ -16,3 +16,6 @@ rewriterule ^(.*)$ index.php?/$1 [L]
 
 ErrorDocument 404 /404.html
 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://makki.pro/$1 [R,L]
+
