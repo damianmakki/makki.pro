@@ -1,4 +1,3 @@
-	<script src="http://www.makki.pro/assets/js/app.js"></script>
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">

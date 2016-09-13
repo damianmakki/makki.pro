@@ -1030,7 +1030,7 @@ body {
   text-align: center; }
   @media (min-width: 0px) and (max-width: 650px) {
     .home {
-      background-position: -460px center;
+      background-position: -375px center;
       background-repeat: repeat; } }
   .home .container {
     margin: 0 auto; }
