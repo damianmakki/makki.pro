@@ -26,6 +26,11 @@ a { text-decoration: none; color: $primary-color; }
 	border-radius: 3px;
 	font-family: 'Permanent Marker'; 
 
+	&.disabled {
+
+		opacity: 0.2;
+		
+	}
 }
 
 .container { 
