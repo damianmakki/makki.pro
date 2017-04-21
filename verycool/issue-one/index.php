@@ -12,11 +12,11 @@
 	<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d55b5b">
-	<meta name="theme-color" content="#ffffff">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#E3FF24">
+	<meta name="theme-color" content="#E3FF24">
 
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/style.min.css">
 
 </head>
 <body>
