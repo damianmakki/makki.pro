@@ -137,7 +137,7 @@ a { text-decoration: none; color: $primary-color; }
 	color: $secondary-color;
 	display: flex;
 
-	@include breakpoint(mobile) { height: 120px; padding: 20px; }
+	@include breakpoint(mobile) { height: 120px; padding: 0; }
 
 	label { 
 
@@ -191,7 +191,7 @@ a { text-decoration: none; color: $primary-color; }
 		align-items: center;
 		justify-content: space-between;
 
-		@include breakpoint(mobile) { flex-direction: column; }
+		@include breakpoint(mobile) { flex-direction: column; justify-content: space-between;}
 
 	}
 	
