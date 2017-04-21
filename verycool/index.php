@@ -32,9 +32,7 @@
 
 			<div class="campaign--header"><span>April 21, 2017</span></div>
 			<div class="campaign--body"><img src="assets/images/issue-one-hero.jpg" /></div>
-			<!--<a href="issue-one" class="button">Check Out Issue One</a>-->
-			<a href="#" class="button disabled">Coming Soon</a>
-
+			<a href="issue-one" class="button">Check Out Issue One</a>
 			</div>
 		</div>
 
