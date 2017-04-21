@@ -22,7 +22,7 @@
 <body>
 	<div class="container interior">
 		<div class="header">
-			<a href="https://www.makki.pro/verycool"><img src="../assets/images/verycool.svg" alt="Very Cool Weekly" /></a>
+			<a href="https://makki.pro/verycool"><img src="../assets/images/verycool.svg" alt="Very Cool Weekly" /></a>
 			<h1>A weekly newsletter (published every Friday) for designers and developers curated by <a href="https://twitter.com/damianmakki">@damianmakki</a>.</h1>
 		</div>
 
