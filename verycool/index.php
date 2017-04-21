@@ -23,7 +23,7 @@
 	<div class="container interior">
 		<div class="header">
 			<a href="https://makki.pro/verycool"><img src="assets/images/verycool.svg" alt="Very Cool Weekly" /></a>
-			<h1>A weekly newsletter (published every Friday) for designers and developers curated by <a href="https://twitter.com/damianmakki">@damianmakki</a>.</h1>
+			<h1>A weekly newsletter (published every Friday) for designers and developers. Curated by <a href="https://twitter.com/damianmakki">@damianmakki</a>.</h1>
 		</div>
 
 		<div class="campaigns">
@@ -32,7 +32,7 @@
 
 			<div class="campaign--header"><span>April 21, 2017</span></div>
 			<div class="campaign--body"><img src="assets/images/issue-one-hero.jpg" /></div>
-			<a href="issue-one" class="button">Checkout Issue One</a>
+			<a href="issue-one" class="button">Check Out Issue One</a>
 
 			</div>
 		</div>

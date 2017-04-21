@@ -23,7 +23,7 @@
 	<div class="container interior">
 		<div class="header">
 			<a href="https://makki.pro/verycool"><img src="../assets/images/verycool.svg" alt="Very Cool Weekly" /></a>
-			<h1>A weekly newsletter (published every Friday) for designers and developers curated by <a href="https://twitter.com/damianmakki">@damianmakki</a>.</h1>
+			<h1>A weekly newsletter (published every Friday) for designers and developers. Curated by <a href="https://twitter.com/damianmakki">@damianmakki</a>.</h1>
 		</div>
 
 		<h2 class="page-title">Issue One</h2>
@@ -32,7 +32,7 @@
 			<img src="images/verycool-hero.png" style="margin-bottom: 20px; " />
 			<p>Welcome to the very first Very Cool. I first wanted to thank you a ton for signing up. It means a lot to me. Also, it's very cool of you.</p>
 			<p>So what is Very Cool, anyway? Well, it's a weekly newsletter (published every Friday) for designers and developers curated by me, <a href="https://www.twitter.com/damianmakki">Damian Makki</a>. I'm a designer, a pseudo-developer, and I run an agency called <a href="https://sammich.shop">Sammich Shop</a>. A huge portion of my day is spent browsing the internet and I regularly come across some very cool stuff. UI concepts, visual designs, illustrations, icons, design and development articles - stuff like that. Very Cool is a weekly curation of some of the (very) cool stuff I find from talented people all over the world.</p>
-			<p>I hope you enjoy the stuff that shows up here every week. It may be stuff you missed during your week on the internet! If you have any feedback or suggestions, I'm <a href="mailto:verycoolweekly@gmail.com">eager to hear from you</a>!</p>
+			<p>I hope you enjoy the stuff that shows up here every week. It may be stuff you missed during your week on the internet! If you have any feedback or suggestions, I'm <a href="https://www.twitter.com/verycoolweekly">eager to hear from you</a>!</p>
 		</div>
 
 		<div class="campaign-section">
