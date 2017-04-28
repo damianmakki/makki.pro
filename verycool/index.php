@@ -32,7 +32,7 @@
 
 				<div class="campaign--header"><span>April 28, 2017</span></div>
 				<div class="campaign--body"><img src="assets/images/issue-two-hero.jpg" /></div>
-				<a href="issue-one" class="button">Check Out Issue Two</a>
+				<a href="issue-two" class="button">Check Out Issue Two</a>
 			</div>
 			
 			<div class="campaign">
