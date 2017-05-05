@@ -29,14 +29,18 @@
 		<div class="campaigns">
 
 			<div class="campaign">
+				<div class="campaign--header"><span>May 5, 2017</span></div>
+				<div class="campaign--body"><img src="assets/images/issue-three-hero.jpg" /></div>
+				<a href="issue-two" class="button">Check Out Issue Three</a>
+			</div>
 
+			<div class="campaign">
 				<div class="campaign--header"><span>April 28, 2017</span></div>
 				<div class="campaign--body"><img src="assets/images/issue-two-hero.jpg" /></div>
 				<a href="issue-two" class="button">Check Out Issue Two</a>
 			</div>
 			
 			<div class="campaign">
-
 				<div class="campaign--header"><span>April 21, 2017</span></div>
 				<div class="campaign--body"><img src="assets/images/issue-one-hero.jpg" /></div>
 				<a href="issue-one" class="button">Check Out Issue One</a>

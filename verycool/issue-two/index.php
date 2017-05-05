@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Very Cool Weekly | Issue One</title>
+	<title>Very Cool Weekly | Issue Two</title>
 	<meta name="description" content="A weekly newsletter (published every Friday) for designers and developers curated by @damianmakki.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
