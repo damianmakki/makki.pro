@@ -92,11 +92,11 @@
 			</div>
 
 			<div class="item" style="width: 100%;">
-				<a href="hhttps://www.fastcodesign.com/90124014/this-wallpaper-doubles-as-a-power-source"><img src="images/light.gif" style="width: 100%; " /></a>
+				<a href="https://www.fastcodesign.com/90124014/this-wallpaper-doubles-as-a-power-source"><img src="images/light.gif" style="width: 100%; " /></a>
 			</div>
 			<div class="item">
 				<span class="item--title">Electric Wallpaper</span>
-				<span class="item--creator"><a href="hhttps://www.fastcodesign.com/90124014/this-wallpaper-doubles-as-a-power-source">via Fast Company</a></span>
+				<span class="item--creator"><a href="https://www.fastcodesign.com/90124014/this-wallpaper-doubles-as-a-power-source">via Fast Company</a></span>
 				<p>While essentially an art installation, Flavor Paper - a wallpaper company from Brooklyn - put together Conduct which is on display at NYCxDesign. It's an exploration of how practical conductive ink could be used as both a functional and artistic piece of design.</p>
 			</div>
 
