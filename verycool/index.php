@@ -31,7 +31,7 @@
 			<div class="campaign">
 				<div class="campaign--header"><span>May 26, 2017</span></div>
 				<div class="campaign--body"><img src="assets/images/issue-six-hero.jpg" /></div>
-				<a href="issue-five" class="button">Check Out Issue Six</a>
+				<a href="issue-six" class="button">Check Out Issue Six</a>
 			</div>
 
 			<div class="campaign">
