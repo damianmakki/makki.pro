@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 2 + MM</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="v1.1.0-(Dark)" sketch:type="MSArtboardGroup" transform="translate(-1190.000000, 0.000000)">
+            <g id="Rectangle-2-+-MM" sketch:type="MSLayerGroup" transform="translate(1190.000000, 0.000000)">
+                <rect id="Rectangle-2" fill="#FFC501" sketch:type="MSShapeGroup" x="0" y="0" width="150" height="150"></rect>
+                <path d="M72.232,91 L65.757,91 L65.757,78.383 L62.02,84.895 L57.876,84.895 L54.139,78.383 L54.139,91 L47.664,91 L47.664,64.656 L54.028,64.656 L59.948,76.274 L65.868,64.656 L72.232,64.656 L72.232,91 Z M102.128,91 L95.653,91 L95.653,78.383 L91.916,84.895 L87.772,84.895 L84.035,78.383 L84.035,91 L77.56,91 L77.56,64.656 L83.924,64.656 L89.844,76.274 L95.764,64.656 L102.128,64.656 L102.128,91 Z" id="MM" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

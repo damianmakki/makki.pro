@@ -1,0 +1,37 @@
+form {
+	
+	margin-top: 50px; 
+
+	float: left; 
+	label { float: left; text-transform: uppercase; font-weight: 700; font-size: 12px; margin-bottom: 5px; }
+
+	input, textarea { 
+
+		border: 1px solid $gray; 
+		border-radius: 3px; 
+		font-size: 14px; 
+		width: 100%; 
+		padding: 10px;
+
+	}
+
+	.mc-field-group {
+
+
+		float: left; 
+		width: 50%; 
+		margin-bottom: 20px; 
+
+		&.half { width: 40%; margin-right: 2.5%; 
+
+		 +.half {}
+
+		}
+	}
+
+    .mergeRow { + .mergeRow { margin-top: 25px; } }
+
+	.hidden-from-view { display: none; }
+
+	.button  { margin-top: 10px; }
+}
