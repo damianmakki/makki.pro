@@ -8,13 +8,6 @@
     }
 }
 
-a { 
-
-	color: white;
-	text-decoration: underline; 
-
-}
-
 @mixin breakpoint($query) {
 
     @if $query == mobile { @media (min-width: 0px) and (max-width: 650px) { @content; } }
