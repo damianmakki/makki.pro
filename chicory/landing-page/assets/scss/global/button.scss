@@ -1,0 +1,22 @@
+.btn {
+
+    background: $primaryColor;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+
+    @include breakpoint(mobile) {
+
+        font-size: 16px;
+    }
+
+    &:hover {
+
+        background: $secondaryColor;
+    }
+}

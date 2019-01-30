@@ -1,0 +1,41 @@
+.button {
+
+    @include blueGradient;
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Gelion";
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+
+    @include breakpoint(desktop) {
+
+        font-size: 24px;
+    }
+
+    &--ghost {
+
+        @extend .button;
+        background: none;
+        border: 1px solid $blue;
+        color: $blue;
+    }
+
+    &--thin {
+
+        @extend .button;
+        padding: 10px 30px;
+    }
+
+    &--green {
+        
+        @extend .button;
+        @include greenGradient;
+    }
+}

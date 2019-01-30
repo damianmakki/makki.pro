@@ -1,12 +1,12 @@
 <?php $pageTitle='Damian Makki'; ?>
-<?php $pageDescription='Damian Makki is a creative web and print designer based out of New York City.'; ?>
+<?php $pageDescription='Damian Makki is a UI/UX designer and front end developer based out of San Diego.'; ?>
 
 <?php include('components/header.php'); ?>
 
 <div class="content home">
 	<div class="container">
 		<h1>Damian Makki</h1>
-		<h2>A traveler, designer, and developer.<br>Co-founder of <a href="https://sammi.ch">Sammich Shop.</a></h2>
+		<h2>A traveler, designer, and developer.<br>I run a small design studio called <a href="https://ruckuslabs.co">Ruckus Labs</a>.</h2>
 	</div>
 
 	<div class="container">
