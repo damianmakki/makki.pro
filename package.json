@@ -1,7 +1,7 @@
 {
-  "name": "sourced-adventures",
-  "version": "2.0.0",
-  "description": "Sourced Adventures 2.0.0",
+  "name": "makkidotpro",
+  "version": "1.0.0",
+  "description": "makki.pro",
   "main": "index.js",
   "directories": {
     "test": "tests"

@@ -1,29 +1,24 @@
 body {
-
     @include clearfix;
-    font-family: 'Calibre', Helvetica, sans-serif;
+    font-family: "Calibre", Helvetica, sans-serif;
     font-weight: 400;
     background: white;
-    background: url('../images/squiggle-pattern.png') repeat, $black;
-
+    background: url("../images/squiggle-pattern.png") repeat, $black;
 }
 
 * {
-
     box-sizing: border-box;
 }
 
 a {
-
     color: white;
     text-decoration: none;
     transition: all 0.2s;
 
     &:after {
-
-        content: '';
+        content: "";
         padding-left: 0;
-        background-image: url('../images/arrow.svg');
+        background-image: url("../images/arrow.svg");
         background-size: cover;
         width: 36px;
         height: 10px;
@@ -31,9 +26,7 @@ a {
     }
 
     &:hover {
-
         &:after {
-
             margin-left: 10px;
             display: inline-block;
         }
@@ -41,79 +34,66 @@ a {
 }
 
 strike {
-
     cursor: not-allowed;
 }
 
 .container {
-
     padding: 100px 0;
     max-width: 900px;
     margin: 0 auto;
     display: flex;
 
     @include breakpoint(mobile) {
-
-    	padding: 25px;
-    	flex-direction: column;
+        padding: 25px;
+        flex-direction: column;
     }
 
     @include breakpoint(tablet) {
-
-    	padding: 50px;
+        padding: 50px;
     }
 
     img {
-
         border-radius: 5px;
         width: 125px;
         height: 125px;
         margin-right: 50px;
 
         @include breakpoint(mobile) {
-
-        	margin-right: 0;
-        	margin-bottom: 50px;
+            margin-right: 0;
+            margin-bottom: 50px;
         }
     }
 
     h1 {
-
         font-size: 48px;
         color: white;
         margin-bottom: 25px;
     }
 
     h2 {
-
         font-size: 24px;
         font-weight: 100;
         color: white;
         line-height: 1.45;
 
         a {
-
             text-decoration: underline;
 
             &:hover {
-
                 margin-left: 0;
 
                 &:after {
-
                     content: none;
                 }
             }
         }
 
-        +h2 {
-
+        + h2 {
             margin-top: 15px;
         }
     }
 
     h3 {
-
         font-size: 18px;
         font-weight: 400;
         color: white;
@@ -124,13 +104,11 @@ strike {
     }
 
     ul {
-
-    	float: left;
-    	clear: both;
+        float: left;
+        clear: both;
     }
 
     li {
-
         font-size: 18px;
         color: white;
         line-height: 1.45;
@@ -140,17 +118,13 @@ strike {
         clear: both;
 
         a {
-
-        	padding: 5px 0;
+            padding: 5px 0;
         }
 
         &:hover {
-
-        	a {
-
-        		padding-left: 20px;
-        	}
+            a {
+                padding-left: 20px;
+            }
         }
-
     }
 }
