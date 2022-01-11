@@ -1,0 +1,8 @@
+@tailwind base;
+@import "./styles/base.css";
+@import "./styles/header.css";
+@import "./styles/layout.css";
+@import "./styles/typography.css";
+@import "./styles/menu.css";
+@import "./styles/carousel.css";
+@import "./styles/animate.css";
