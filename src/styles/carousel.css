@@ -3,7 +3,7 @@
 }
 
 .swiper-slide {
-  width: 90%;
+  width: 85% !important;
   max-width: 600px;
 }
 
@@ -34,4 +34,10 @@ figure img {
   max-height: 175px;
   width: 50%;
   transition: transform 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper-wrapper {
+    transform: translate3d(5%, 0px, 0px) !important;
+  }
 }

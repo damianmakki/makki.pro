@@ -5,6 +5,12 @@ h1 {
   margin-top: 50px !important;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 38px !important;
+  }
+}
+
 h2 {
   color: white;
   font-size: 24px !important;
@@ -80,4 +86,15 @@ a.invalid:hover {
   opacity: 0.5;
   margin-top: 50px;
   font-size: 12px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 38px !important;
+  }
+
+  .copyright {
+    max-width: 276px;
+    line-height: 2;
+  }
 }
