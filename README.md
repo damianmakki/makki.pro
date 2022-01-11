@@ -1,5 +1,5 @@
 ## [makki.pro](https://www.makki.pro)
-Hey! I'm Damian<br />
+Hey! I'm Damian. Nice to meet you.<br /><br />
 If you're reading this you might be interested in how it was built! It's a fairly straightforward CRA project with some extras sprinkled in to give it that "pop."
 
 ## Credit & Thanks
