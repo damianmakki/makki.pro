@@ -1,0 +1,20 @@
+html {
+  background: #272727;
+  color: #777777;
+  padding: 50px 0;
+}
+
+.profile {
+  border-radius: 100%;
+  width: 35px;
+}
+
+.hamburger {
+  cursor: pointer;
+  padding: 25px;
+}
+
+hr {
+  border-color: #777;
+  margin-top: 50px !important;
+}
