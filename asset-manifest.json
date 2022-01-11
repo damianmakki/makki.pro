@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.3598ca04.css",
-    "main.js": "/static/js/main.5b47f51f.js",
-    "static/media/profile.jpg": "/static/media/profile.1dc32a54bb7d1d6a558c.jpg",
-    "static/media/very-cool-logo.svg": "/static/media/very-cool-logo.fd315899827890c4f460bde7f3ed3eb2.svg",
-    "static/media/runitback-logo.svg": "/static/media/runitback-logo.2ac848e0eaf4fb8f6505e5233ac4d538.svg",
-    "static/media/ruckus-logo.svg": "/static/media/ruckus-logo.d52538e3dd68f43c67762486b6cd3bb1.svg",
-    "index.html": "/index.html",
-    "static/media/hamburger.svg": "/static/media/hamburger.b761d6b662527806fbc0eae9d8479ee1.svg",
-    "main.3598ca04.css.map": "/static/css/main.3598ca04.css.map",
-    "main.5b47f51f.js.map": "/static/js/main.5b47f51f.js.map"
+    "main.css": "/makki.pro/static/css/main.3598ca04.css",
+    "main.js": "/makki.pro/static/js/main.47d427b1.js",
+    "static/media/profile.jpg": "/makki.pro/static/media/profile.1dc32a54bb7d1d6a558c.jpg",
+    "static/media/very-cool-logo.svg": "/makki.pro/static/media/very-cool-logo.fd315899827890c4f460bde7f3ed3eb2.svg",
+    "static/media/runitback-logo.svg": "/makki.pro/static/media/runitback-logo.2ac848e0eaf4fb8f6505e5233ac4d538.svg",
+    "static/media/ruckus-logo.svg": "/makki.pro/static/media/ruckus-logo.d52538e3dd68f43c67762486b6cd3bb1.svg",
+    "index.html": "/makki.pro/index.html",
+    "static/media/hamburger.svg": "/makki.pro/static/media/hamburger.b761d6b662527806fbc0eae9d8479ee1.svg",
+    "main.3598ca04.css.map": "/makki.pro/static/css/main.3598ca04.css.map",
+    "main.47d427b1.js.map": "/makki.pro/static/js/main.47d427b1.js.map"
   },
   "entrypoints": [
     "static/css/main.3598ca04.css",
-    "static/js/main.5b47f51f.js"
+    "static/js/main.47d427b1.js"
   ]
 }
