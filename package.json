@@ -1,6 +1,6 @@
 {
-  "homepage": "https://makki.pro",
   "name": "makki-dot-pro",
+  "homepage": "makki.pro",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
