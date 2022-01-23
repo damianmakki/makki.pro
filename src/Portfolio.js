@@ -8,8 +8,6 @@ import Contact from "./components/Contact";
 import Social from "./components/Social";
 
 import { Animated } from "react-animated-css";
-import HamburgerIcon from './images/hamburger.svg';
-import { slide as Menu } from 'react-burger-menu'
 
 export default function Portfolio() {
   return (
@@ -45,8 +43,9 @@ export default function Portfolio() {
           <WritingAndPodcasts />
         </Animated>
 
+
         <Animated animationIn="fadeIn" animationInDelay={1400}>
-          <hr />
+          <Social />
         </Animated>
 
         <Animated animationIn="fadeIn" animationInDelay={1600}>
@@ -54,10 +53,6 @@ export default function Portfolio() {
         </Animated>
 
         <Animated animationIn="fadeIn" animationInDelay={1800}>
-          <Social />
-        </Animated>
-
-        <Animated animationIn="fadeIn" animationInDelay={2000}>
           <p className="copyright">© 2012 - {new Date().getFullYear()} with love by <a href="https://www.ruckuslabs.co">Ruckus Labs, LLC</a>. Any and all rights reserved.</p>
         </Animated>
       </div>
