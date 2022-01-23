@@ -1,8 +1,20 @@
+@font-face {
+  font-family: "SF";
+  src: url("../fonts/SF-UI-Display-Medium.woff");
+}
+
 h1 {
   font-size: 48px !important;
   color: white !important;
   font-weight: bolder !important;
   margin-top: 50px !important;
+  background: linear-gradient(-21deg, #5f1535, #ce396b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s ease-in-out infinite;
+  -webkit-animation: gradient 3s ease-in-out infinite;
+  background-size: 200% 200%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -68,6 +80,9 @@ a:after {
   content: " ↗";
   display: inline-block;
   margin-left: 5px;
+  font-family: "SF";
+  position: relative;
+  top: 2px;
 }
 
 a.invalid {
@@ -96,5 +111,17 @@ a.invalid:hover {
   .copyright {
     max-width: 276px;
     line-height: 2;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
