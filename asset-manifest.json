@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.25ced863.css",
-    "main.js": "/static/js/main.47311625.js",
-    "static/media/profile.jpg": "/static/media/profile.1dc32a54bb7d1d6a558c.jpg",
+    "main.css": "/static/css/main.56618c20.css",
+    "main.js": "/static/js/main.fe99fc5c.js",
+    "static/media/profile.jpg": "/static/media/profile.b1a8d896dd093ebd235a.jpg",
     "static/media/SF-UI-Display-Medium.woff": "/static/media/SF-UI-Display-Medium.ee6de8d2a56f5956122e.woff",
     "static/media/SF-UI-Display-Bold.woff": "/static/media/SF-UI-Display-Bold.26fbdc978b29bab903c2.woff",
     "static/media/very-cool-logo.svg": "/static/media/very-cool-logo.fd315899827890c4f460bde7f3ed3eb2.svg",
     "static/media/runitback-logo.svg": "/static/media/runitback-logo.2ac848e0eaf4fb8f6505e5233ac4d538.svg",
     "static/media/ruckus-logo.svg": "/static/media/ruckus-logo.d52538e3dd68f43c67762486b6cd3bb1.svg",
     "index.html": "/index.html",
-    "main.25ced863.css.map": "/static/css/main.25ced863.css.map",
-    "main.47311625.js.map": "/static/js/main.47311625.js.map"
+    "main.56618c20.css.map": "/static/css/main.56618c20.css.map",
+    "main.fe99fc5c.js.map": "/static/js/main.fe99fc5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.25ced863.css",
-    "static/js/main.47311625.js"
+    "static/css/main.56618c20.css",
+    "static/js/main.fe99fc5c.js"
   ]
 }
