@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "makki.pro dev",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd /Users/DMakki/Sites/ruckus/makki.pro && BROWSER=none npx --yes react-scripts@5.0.0 start 2>&1"],
+      "port": 3000
+    }
+  ]
+}
