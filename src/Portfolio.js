@@ -1,62 +1,109 @@
-import Header from "./components/Header";
-import About from "./components/About";
-import Carousel from "./components/Carousel";
-import CorporateExperience from "./components/CorporateExperience";
-import StartupExperience from "./components/StartupExperience";
-import WritingAndPodcasts from "./components/WritingAndPodcasts";
-import Contact from "./components/Contact";
-import Social from "./components/Social";
+import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import About from './components/About';
+import Resume from './pages/Resume';
 
-import { Animated } from "react-animated-css";
+function BlogRedirect() {
+  useEffect(() => { window.location.href = '/blog/'; }, []);
+  return null;
+}
+
+function useTheme() {
+  const [theme, setTheme] = useState(() => {
+    try {
+      const stored = localStorage.getItem('makki.theme');
+      if (stored) return stored;
+    } catch {}
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    const handler = (e) => {
+      try {
+        if (localStorage.getItem('makki.theme')) return;
+      } catch {}
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
+  const toggle = () => {
+    setTheme(t => {
+      const next = t === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('makki.theme', next); } catch {}
+      return next;
+    });
+  };
+  return [theme, toggle];
+}
+
+function Nav({ theme, onToggle }) {
+  return (
+    <nav className="top">
+      <div className="nav-inner">
+        <div className="nav-links">
+          <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink>
+          {/* <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''}>Blog</NavLink> */}
+          <NavLink to="/resume" className={({ isActive }) => isActive ? 'active' : ''}>Resume</NavLink>
+        </div>
+        <div className="nav-right">
+          <button className="icon-btn" onClick={onToggle} aria-label="Toggle theme">
+            {theme === 'dark' ? (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            )}
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function PageWrapper({ children }) {
+  const { pathname } = useLocation();
+  
+  // Update document title based on the current path
+  useEffect(() => {
+    const titleMap = {
+      '/': 'About | Damian Makki | Designer and Front-End Developer',
+      '/resume': 'Resume | Damian Makki | Designer and Front-End Developer'
+    };
+    
+    const title = titleMap[pathname] || 'Damian Makki | Designer and Front-End Developer';
+    document.title = title;
+  }, [pathname]);
+  
+  return (
+    <main key={pathname} className="page-enter">
+      <div className="col">{children}</div>
+    </main>
+  );
+}
 
 export default function Portfolio() {
+  const [theme, toggleTheme] = useTheme();
+
   return (
-    <>
-      <div className="content--centered">
-        <Animated animationIn="fadeIn" animationInDelay={200}>
-          <Header />
-        </Animated>
-
-        <Animated animationIn="fadeIn" animationInDelay={400}>
-          <About />
-        </Animated>
-
-        <Animated animationIn="fadeIn" animationInDelay={600}>
-          <h2 id="projects">Projects</h2>
-        </Animated>
+    <BrowserRouter>
+      <div className="app">
+        <Nav theme={theme} onToggle={toggleTheme} />
+        <Routes>
+          <Route path="/" element={<PageWrapper><About /></PageWrapper>} />
+          {/* <Route path="/blog" element={<BlogRedirect />} /> */}
+          <Route path="/resume" element={<PageWrapper><Resume /></PageWrapper>} />
+        </Routes>
+        <footer className="site">
+          <span className="spring">© {new Date().getFullYear()} Damian Makki</span>
+        </footer>
       </div>
-
-      <Animated animationIn="fadeIn" animationInDelay={600}>
-        <Carousel />
-      </Animated>
-
-      <div className="content--centered">
-        <Animated animationIn="fadeIn" animationInDelay={800}>
-          <CorporateExperience />
-        </Animated>
-
-        <Animated animationIn="fadeIn" animationInDelay={1000}>
-          <StartupExperience />
-        </Animated>
-
-        <Animated animationIn="fadeIn" animationInDelay={1200}>
-          <WritingAndPodcasts />
-        </Animated>
-
-
-        <Animated animationIn="fadeIn" animationInDelay={1400}>
-          <Social />
-        </Animated>
-
-        <Animated animationIn="fadeIn" animationInDelay={1600}>
-          <Contact />
-        </Animated>
-
-        <Animated animationIn="fadeIn" animationInDelay={1800}>
-          <p className="copyright">© 2012 - {new Date().getFullYear()} with love by <a href="https://www.ruckuslabs.co">Ruckus Labs, LLC</a>. Any and all rights reserved.</p>
-        </Animated>
-      </div>
-
-    </>
+    </BrowserRouter>
   );
 }

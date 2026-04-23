@@ -1,0 +1,34 @@
+@media (max-width: 640px) {
+  main {
+    padding: 32px 20px;
+  }
+  .nav-inner {
+    padding: 12px 20px;
+  }
+  .card {
+    flex-basis: 85%;
+  }
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .entry .years {
+    padding-top: 0;
+  }
+  .post {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .post .date {
+    padding-top: 0;
+  }
+  .post .read {
+    display: none;
+  }
+  h1.hero {
+    font-size: 22px;
+  }
+  .status {
+    display: none;
+  }
+}

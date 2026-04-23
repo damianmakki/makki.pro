@@ -1,0 +1,90 @@
+---
+layout: base.njk
+title: "Writing — makki.pro"
+description: "Essays, notes, and experiments by Damian Makki."
+permalink: /blog/index.html
+eleventyExcludeFromCollections: true
+---
+<div class="resume-header">
+  <div>
+    <h1 class="hero" style="margin-bottom:6px">Writing</h1>
+    <p style="color:var(--fg-muted);margin:0;font-size:14px">Essays, notes, and experiments. {{ collections.posts | length }} posts.</p>
+  </div>
+  <a href="/blog/feed.xml" class="download-btn">
+    RSS
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5" fill="currentColor"/>
+    </svg>
+  </a>
+</div>
+
+<div class="topic-bar" id="topic-bar">
+  <span class="topic active" data-filter="all">All</span>
+  <span class="topic" data-filter="ai">AI</span>
+  <span class="topic" data-filter="design">Design</span>
+  <span class="topic" data-filter="engineering">Engineering</span>
+  <span class="topic" data-filter="notebook">Notebook</span>
+</div>
+
+{% for post in collections.posts %}
+  {% if post.data.featured %}
+    <article class="post featured" data-topic="{{ post.data.topic }}">
+      <div class="media">
+        <div class="stripes"></div>
+        <span class="placeholder-text">feature image · 16:9</span>
+      </div>
+      <div class="meta">
+        <span class="eyebrow">Featured</span>
+        <span class="date">{{ post.date | shortDate }}</span>
+        <span class="date">· {{ post.data.read }}</span>
+      </div>
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      <p class="excerpt">{{ post.data.excerpt }}</p>
+    </article>
+  {% endif %}
+{% endfor %}
+
+<div class="post-list" id="post-list">
+  {% for post in collections.posts %}
+    {% if not post.data.featured %}
+    <article class="post" data-topic="{{ post.data.topic }}" data-url="{{ post.url }}">
+      <span class="date">{{ post.date | shortDate }}</span>
+      <div class="body">
+        <h3>{{ post.data.title }}</h3>
+        <p class="excerpt">{{ post.data.excerpt }}</p>
+      </div>
+      <span class="read">{{ post.data.read }}</span>
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+  (function() {
+    var chips = document.querySelectorAll('#topic-bar .topic');
+    var featured = document.querySelector('.post.featured');
+    var posts = document.querySelectorAll('#post-list .post');
+
+    chips.forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        var filter = chip.dataset.filter;
+        chips.forEach(function(c) { c.classList.remove('active'); });
+        chip.classList.add('active');
+
+        if (featured) {
+          featured.style.display = (filter === 'all' || featured.dataset.topic === filter) ? '' : 'none';
+        }
+        posts.forEach(function(post) {
+          post.style.display = (filter === 'all' || post.dataset.topic === filter) ? '' : 'none';
+        });
+      });
+    });
+
+    posts.forEach(function(post) {
+      post.addEventListener('click', function() {
+        var url = post.dataset.url;
+        if (url) { window.location.href = url; }
+      });
+    });
+  })();
+</script>

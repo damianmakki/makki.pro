@@ -1,0 +1,344 @@
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.avatar img.pop-animate {
+  animation: pop 0.4s ease-in-out;
+}
+
+.intro-meta {
+  display: flex;
+  flex-direction: column;
+}
+.intro-meta .name {
+  font-weight: 600;
+  font-size: 1.25em;
+  color: var(--fg);
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+.intro-meta .handle {
+  font-size: 1em;
+  color: var(--fg-muted);
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--fg-muted);
+  padding: 4px 10px;
+  border: 1px solid var(--chip-border);
+  border-radius: var(--radius-pill);
+  background: var(--chip-bg);
+  margin-left: auto;
+  white-space: nowrap;
+}
+.status .pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #4ea874;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #4ea874 25%, transparent);
+  animation: pulse 2.2s var(--ease) infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 3px color-mix(in srgb, #4ea874 25%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, #4ea874 5%, transparent);
+  }
+}
+
+.featured-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.car-controls {
+  display: inline-flex;
+  gap: 4px;
+}
+.car-controls button {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--fg-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s var(--ease);
+}
+.car-controls button:hover {
+  color: var(--fg);
+  border-color: var(--border-strong);
+}
+.car-controls button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.car-controls button svg {
+  width: 12px;
+  height: 12px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 0 -4px;
+}
+.carousel-track {
+  display: flex;
+  gap: 14px;
+  padding: 4px;
+  transition: transform 0.5s var(--ease);
+  will-change: transform;
+}
+.card {
+  flex: 0 0 calc(50% - 11px);
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s var(--ease);
+  cursor: pointer;
+  text-decoration: none;
+}
+.card:hover {
+  border-color: var(--border-strong);
+}
+.card-media {
+  aspect-ratio: 16/10;
+  background: var(--bg-subtle);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+}
+.card-media .stripes {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--fg) 3%, transparent) 0 1px,
+    transparent 1px 14px
+  );
+}
+.card-media .placeholder-text {
+  position: relative;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--fg-subtle);
+  letter-spacing: 0.02em;
+  opacity: 0.7;
+  transition: opacity 0.2s var(--ease);
+}
+.card:hover .card-media .placeholder-text {
+  opacity: 0.9;
+}
+.card[data-tint="1"] .card-media {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--fg) 5%, var(--bg-subtle)),
+    var(--bg-subtle)
+  );
+}
+.card[data-tint="2"] .card-media {
+  background: linear-gradient(
+    135deg,
+    var(--bg-subtle),
+    color-mix(in srgb, var(--fg) 7%, var(--bg-subtle))
+  );
+}
+.card[data-tint="3"] .card-media {
+  background: var(--bg-subtle);
+}
+.card[data-tint="4"] .card-media {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--fg) 4%, var(--bg-subtle)),
+    var(--bg-subtle)
+  );
+}
+
+.card-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.card-kind {
+  font-size: 11px;
+  color: var(--fg-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fg);
+  letter-spacing: -0.005em;
+  line-height: 1.4;
+}
+.card-desc {
+  font-size: 13px;
+  color: var(--fg-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card-full-bleed {
+  aspect-ratio: 16/10;
+  position: relative;
+}
+.card-full-bleed .card-media {
+  position: absolute;
+  inset: 0;
+  border-bottom: none;
+  background: transparent;
+}
+
+.full-bleed-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.full-bleed-image {
+  max-width: 65%;
+  max-height: 65%;
+  object-fit: contain;
+}
+
+.card-standard .card-media {
+  aspect-ratio: 16/8;
+  background: var(--bg-subtle);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 14px;
+  justify-content: center;
+}
+.carousel-dots .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--border-strong);
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+  border: none;
+  padding: 0;
+}
+.carousel-dots .dot.active {
+  background: var(--fg);
+  width: 16px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--fg);
+  transition: padding 0.18s var(--ease);
+  text-decoration: none;
+}
+.links a:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.links a .left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.links a .left .icon {
+  width: 18px;
+  display: inline-flex;
+  color: var(--fg-muted);
+}
+.links a .left .icon svg {
+  width: 16px;
+  height: 16px;
+}
+.links a .handle {
+  color: var(--fg-muted);
+  font-size: 13px;
+  font-family: var(--font-mono);
+}
+.links a .arrow {
+  color: var(--fg-subtle);
+  transition:
+    transform 0.18s var(--ease),
+    color 0.18s var(--ease);
+  font-size: 14px;
+}
+.links a:hover .arrow {
+  transform: translate(2px, -2px);
+  color: var(--fg);
+}
