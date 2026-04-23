@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b1d2776.css",
-    "main.js": "/static/js/main.f321a534.js",
+    "main.css": "/static/css/main.ba836796.css",
+    "main.js": "/static/js/main.78e3e6f7.js",
     "static/media/trace.svg": "/static/media/trace.914f112952929ed5136e4fa894529f4e.svg",
     "static/media/profile.png": "/static/media/profile.fd6287758efe02e80167.png",
     "static/media/verycoolweekly.svg": "/static/media/verycoolweekly.a3cab8ab3102b1c90accebffd97ee6e2.svg",
@@ -9,11 +9,11 @@
     "static/media/ruckus-labs.svg": "/static/media/ruckus-labs.2bf7f07458df8b6d30899854feaf0c1b.svg",
     "static/media/makki-retro.png": "/static/media/makki-retro.f85d35b4067fe6a2554e.png",
     "index.html": "/index.html",
-    "main.9b1d2776.css.map": "/static/css/main.9b1d2776.css.map",
-    "main.f321a534.js.map": "/static/js/main.f321a534.js.map"
+    "main.ba836796.css.map": "/static/css/main.ba836796.css.map",
+    "main.78e3e6f7.js.map": "/static/js/main.78e3e6f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b1d2776.css",
-    "static/js/main.f321a534.js"
+    "static/css/main.ba836796.css",
+    "static/js/main.78e3e6f7.js"
   ]
 }
