@@ -1,10 +1,58 @@
-.content--centered {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
-aside {
-  border-left: 1px solid rgba(119, 119, 119, 0.5);
-  padding-left: 25px;
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 56px 28px var(--section-gap, 72px);
+  width: 100%;
+}
+.col {
+  max-width: var(--max-w);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--fg-subtle);
+  font-weight: 500;
+}
+h1.hero {
+  font-size: 26px;
+  line-height: 1.32;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+  margin: 0 0 18px;
+  color: var(--fg);
+  text-wrap: balance;
+}
+h1.hero .muted {
+  color: var(--fg-subtle);
+  font-weight: 600;
+}
+h2.section {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--fg-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 20px;
+}
+p {
+  margin: 0 0 var(--line-gap, 14px);
+  color: var(--fg-muted);
+  line-height: 1.65;
+}
+p.lede {
+  color: var(--fg);
+}
+
+section.block {
+  margin-top: var(--section-gap, 72px);
 }

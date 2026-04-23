@@ -1,23 +1,41 @@
 import { HashRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import About from './components/About';
-import Blog from './pages/Blog';
 import Resume from './pages/Resume';
+
+function BlogRedirect() {
+  useEffect(() => { window.location.href = '/blog/'; }, []);
+  return null;
+}
 
 function useTheme() {
   const [theme, setTheme] = useState(() => {
     try {
-      return localStorage.getItem('makki.theme') || 'dark';
-    } catch { return 'dark'; }
+      const stored = localStorage.getItem('makki.theme');
+      if (stored) return stored;
+    } catch {}
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
 
   useEffect(() => {
-    document.documentElement.dataset.theme = theme;
-    document.documentElement.dataset.density = 'comfy';
-    try { localStorage.setItem('makki.theme', theme); } catch {}
-  }, [theme]);
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    const handler = (e) => {
+      try {
+        if (localStorage.getItem('makki.theme')) return;
+      } catch {}
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
 
-  const toggle = () => setTheme(t => t === 'dark' ? 'light' : 'dark');
+  const toggle = () => {
+    setTheme(t => {
+      const next = t === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('makki.theme', next); } catch {}
+      return next;
+    });
+  };
   return [theme, toggle];
 }
 
@@ -25,12 +43,9 @@ function Nav({ theme, onToggle }) {
   return (
     <nav className="top">
       <div className="nav-inner">
-        <NavLink to="/" className="brand">
-          <span>makki</span><span className="sup">.pro</span>
-        </NavLink>
         <div className="nav-links">
           <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink>
-          <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''}>Blog</NavLink>
+          {/* <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''}>Blog</NavLink> */}
           <NavLink to="/resume" className={({ isActive }) => isActive ? 'active' : ''}>Resume</NavLink>
         </div>
         <div className="nav-right">
@@ -54,6 +69,18 @@ function Nav({ theme, onToggle }) {
 
 function PageWrapper({ children }) {
   const { pathname } = useLocation();
+  
+  // Update document title based on the current path
+  useEffect(() => {
+    const titleMap = {
+      '/': 'About | Damian Makki | Designer and Front-End Developer',
+      '/resume': 'Resume | Damian Makki | Designer and Front-End Developer'
+    };
+    
+    const title = titleMap[pathname] || 'Damian Makki | Designer and Front-End Developer';
+    document.title = title;
+  }, [pathname]);
+  
   return (
     <main key={pathname} className="page-enter">
       <div className="col">{children}</div>
@@ -70,7 +97,7 @@ export default function Portfolio() {
         <Nav theme={theme} onToggle={toggleTheme} />
         <Routes>
           <Route path="/" element={<PageWrapper><About /></PageWrapper>} />
-          <Route path="/blog" element={<PageWrapper><Blog /></PageWrapper>} />
+          {/* <Route path="/blog" element={<BlogRedirect />} /> */}
           <Route path="/resume" element={<PageWrapper><Resume /></PageWrapper>} />
         </Routes>
         <footer className="site">

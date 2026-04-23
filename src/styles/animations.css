@@ -1,0 +1,13 @@
+.page-enter {
+  animation: fadein 0.35s var(--ease);
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

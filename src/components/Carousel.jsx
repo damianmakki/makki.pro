@@ -1,37 +1,39 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
+import RuckusLabsLogo from '../images/carousel/ruckus-labs.svg';
+import TraceLogo from '../images/carousel/trace.svg';
+import SomaticLogo from '../images/carousel/somatic.svg';
+import VeryCoolWeekly from '../images/carousel/verycoolweekly.svg';
 
+
+// Card types:
+//   type: 'full-bleed'  — centered image/svg, no text. props: image, href?, bg?
+//   type: 'standard'    — hero image top half + text below. props: heroImage, title, description, href?, bg?
+//
+// Shared props:
+//   href  — optional. omit to render a non-clickable div instead of a link
+//   bg    — optional css color for the card background (e.g. '#fff', '#0e0e0d', 'var(--bg-subtle)')
+//           omit to use var(--bg-elev), which adapts automatically to dark/light mode
 const CARDS = [
   {
-    tint: '1',
-    href: '#/blog',
-    kind: 'Essay · New',
-    title: 'Exploring AI, quietly',
-    desc: 'Notes from six months of building small, useful things with models — and what I\'m still figuring out.',
-    placeholder: 'essay / cover art',
-  },
-  {
-    tint: '2',
+    type: 'full-bleed',
     href: 'https://www.ruckuslabs.co',
-    kind: 'Studio',
-    title: 'Ruckus Labs — now taking projects',
-    desc: 'A design studio for teams that care about craft. Brand, product, and the interfaces in between.',
-    placeholder: 'studio reel',
+    image: RuckusLabsLogo,
   },
   {
-    tint: '3',
-    href: '#/',
-    kind: 'Launch',
-    title: 'Somatic: a new way to track how you feel',
-    desc: 'Our tiny app for checking in with your body is out. Built with love and a lot of SwiftUI.',
-    placeholder: 'product shot / somatic',
+    type: 'full-bleed',
+    href: 'https://damianmakki.github.io/trace/',
+    image: TraceLogo,
+    bg: '#fff',
   },
   {
-    tint: '4',
-    href: '#/blog',
-    kind: 'Notebook',
-    title: 'What a week of building in public taught me',
-    desc: 'Ten small posts, one big lesson about why momentum beats perfection every single time.',
-    placeholder: 'sketch / process',
+    type: 'full-bleed',
+    image: SomaticLogo,
+    bg: '#ffffff',
+  },
+  {
+    type: 'full-bleed',
+    href: 'https://damianmakki.github.io/verycoolweekly/',
+    image: VeryCoolWeekly,
   },
 ];
 
@@ -57,6 +59,7 @@ export default function Carousel() {
 
   useEffect(() => {
     if (!trackRef.current) return;
+    // Get the first card's width to calculate transform
     const card = trackRef.current.children[0];
     if (!card) return;
     const cardW = card.getBoundingClientRect().width;
@@ -83,19 +86,29 @@ export default function Carousel() {
 
       <div className="carousel" ref={carouselRef}>
         <div className="carousel-track" ref={trackRef}>
-          {CARDS.map((card, i) => (
-            <a key={i} className="card" data-tint={card.tint} href={card.href}>
-              <div className="card-media">
-                <div className="stripes"></div>
-                <span className="placeholder-text">{card.placeholder}</span>
-              </div>
-              <div className="card-body">
-                <span className="card-kind">{card.kind}</span>
-                <span className="card-title">{card.title}</span>
-                <p className="card-desc">{card.desc}</p>
-              </div>
-            </a>
-          ))}
+          {CARDS.map((card, i) => {
+            const Tag = card.href ? 'a' : 'div';
+            return (
+              <Tag key={i} className={`card card-${card.type}`} {...(card.href && { href: card.href })}>
+                <div className="card-media">
+                  {card.type === 'full-bleed' && (
+                    <div className="full-bleed-container" style={{ background: card.bg || 'var(--bg-elev)' }}>
+                      <img src={card.image} alt="Logo" className="full-bleed-image" />
+                    </div>
+                  )}
+                  {card.type === 'standard' && (
+                    <img src={card.heroImage} alt="Hero" className="hero-image" />
+                  )}
+                </div>
+                {card.type === 'standard' && (
+                  <div className="card-body">
+                    <span className="card-title">{card.title}</span>
+                    <p className="card-desc">{card.description}</p>
+                  </div>
+                )}
+              </Tag>
+            );
+          })}
         </div>
       </div>
 

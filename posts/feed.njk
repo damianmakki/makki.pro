@@ -1,0 +1,25 @@
+---
+permalink: /blog/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>makki.pro — Writing</title>
+  <subtitle>Essays, notes, and experiments by Damian Makki.</subtitle>
+  <link href="https://makki.pro/blog/feed.xml" rel="self"/>
+  <link href="https://makki.pro/blog/"/>
+  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>https://makki.pro/blog/</id>
+  <author>
+    <name>Damian Makki</name>
+  </author>
+  {% for post in collections.posts %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ post.url | absoluteUrl("https://makki.pro") }}"/>
+    <id>{{ post.url | absoluteUrl("https://makki.pro") }}</id>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <summary>{{ post.data.excerpt }}</summary>
+  </entry>
+  {% endfor %}
+</feed>
