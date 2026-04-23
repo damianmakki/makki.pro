@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import About from './components/About';
 import Resume from './pages/Resume';
@@ -92,7 +92,7 @@ export default function Portfolio() {
   const [theme, toggleTheme] = useTheme();
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="app">
         <Nav theme={theme} onToggle={toggleTheme} />
         <Routes>
@@ -104,6 +104,6 @@ export default function Portfolio() {
           <span className="spring">© {new Date().getFullYear()} Damian Makki</span>
         </footer>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
