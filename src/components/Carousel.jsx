@@ -70,6 +70,36 @@ export default function Carousel() {
 
   const go = (i) => setIndex(Math.max(0, Math.min(i, pages - 1)));
 
+  const dragStartX = useRef(null);
+  const didSwipe = useRef(false);
+
+  const onKeyDown = (e) => {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(index - 1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); go(index + 1); }
+  };
+
+  const onPointerDown = (e) => {
+    dragStartX.current = e.clientX;
+    didSwipe.current = false;
+  };
+  const onPointerUp = (e) => {
+    if (dragStartX.current === null) return;
+    const delta = e.clientX - dragStartX.current;
+    dragStartX.current = null;
+    if (Math.abs(delta) > 50) {
+      didSwipe.current = true;
+      go(delta > 0 ? index - 1 : index + 1);
+    }
+  };
+  const onPointerCancel = () => { dragStartX.current = null; };
+  const onClickCapture = (e) => {
+    if (didSwipe.current) {
+      e.preventDefault();
+      e.stopPropagation();
+      didSwipe.current = false;
+    }
+  };
+
   return (
     <section className="block">
       <div className="featured-head">
@@ -84,7 +114,18 @@ export default function Carousel() {
         </div>
       </div>
 
-      <div className="carousel" ref={carouselRef}>
+      <div
+        className="carousel"
+        ref={carouselRef}
+        onPointerDown={onPointerDown}
+        onPointerUp={onPointerUp}
+        onPointerCancel={onPointerCancel}
+        onClickCapture={onClickCapture}
+        onKeyDown={onKeyDown}
+        tabIndex={0}
+        role="region"
+        aria-label="Featured projects"
+      >
         <div className="carousel-track" ref={trackRef}>
           {CARDS.map((card, i) => {
             const Tag = card.href ? 'a' : 'div';
@@ -93,11 +134,11 @@ export default function Carousel() {
                 <div className="card-media">
                   {card.type === 'full-bleed' && (
                     <div className="full-bleed-container" style={{ background: card.bg || 'var(--bg-elev)' }}>
-                      <img src={card.image} alt="Logo" className="full-bleed-image" />
+                      <img src={card.image} alt="Logo" className="full-bleed-image" draggable="false" />
                     </div>
                   )}
                   {card.type === 'standard' && (
-                    <img src={card.heroImage} alt="Hero" className="hero-image" />
+                    <img src={card.heroImage} alt="Hero" className="hero-image" draggable="false" />
                   )}
                 </div>
                 {card.type === 'standard' && (

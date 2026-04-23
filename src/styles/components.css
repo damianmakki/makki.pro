@@ -122,6 +122,13 @@
   position: relative;
   overflow: hidden;
   margin: 0 -4px;
+  touch-action: pan-y;
+  user-select: none;
+  outline: none;
+}
+.carousel:focus-visible {
+  box-shadow: 0 0 0 2px var(--fg);
+  border-radius: var(--radius);
 }
 .carousel-track {
   display: flex;
