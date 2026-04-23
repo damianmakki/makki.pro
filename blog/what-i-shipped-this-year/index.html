@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-density="comfy">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="128x128" href="/app-icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e0d">
+  <meta name="description" content="Damian Makki — design engineer at Apple, running Ruckus Labs.">
+  <link rel="alternate" type="application/rss+xml" title="makki.pro — Writing" href="/blog/feed.xml">
+  <title>What I shipped this year</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/blog/blog.css">
+  <script>
+    (function(){try{var t=localStorage.getItem('makki.theme')||'dark';}catch(e){var t='dark';}
+    document.documentElement.dataset.theme=t;
+    document.documentElement.dataset.density='comfy';})();
+  </script>
+</head>
+<body>
+<div class="app">
+  <nav class="top">
+    <div class="nav-inner">
+      <a href="/" class="brand"><span>makki</span><span class="sup">.pro</span></a>
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#/resume">Resume</a>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-enter">
+    <div class="col">
+      <article class="post-body">
+  <div class="post-meta-head">
+    <a href="/blog/" class="back-link">← Writing</a>
+    <span class="date">Nov 13 · 25</span>
+    <span class="date">· 5 min</span>
+    <span class="topic-tag">engineering</span>
+  </div>
+
+  <h1 class="hero">What I shipped this year</h1>
+  <p class="lede">A brief, opinionated review of every side project I started, finished, or quietly abandoned in 2025.</p>
+
+  <div class="prose">
+    <p>A yearly accounting. These are the things I built, in roughly chronological order, with notes on what worked and what didn't.</p>
+<h2>Shipped</h2>
+<p><strong>Dictation Pad.</strong> A menu bar app for voice-to-text. Built it in Swift in February, rebuilt it twice (see the other post), now use it every day. This is the project I'm most proud of, not because it's impressive, but because it's genuinely useful and I've never stopped using it.</p>
+<p><strong>Somatic.</strong> A daily check-in app built with my co-founder. Log how you're feeling, track patterns over time. Quiet launch in August. About 400 people use it regularly. We're not trying to grow it fast.</p>
+<p><strong>This website.</strong> Redesigned in March, shipped in April. The previous version was from 2021 and it showed. Writing about design while having a design this stale felt dishonest.</p>
+<h2>Abandoned (with notes)</h2>
+<p><strong>A recipe app.</strong> The idea was good: parse any recipe URL and give you a clean, ad-free version. The problem: recipe websites change their HTML constantly, and the parser required constant maintenance. Abandoned in April.</p>
+<p><strong>A Pomodoro timer with spaced repetition.</strong> This one got complicated in the planning phase and never recovered. I made a prototype. It's on my computer. I haven't opened it in six months.</p>
+<p><strong>A tool for visualizing calendar density.</strong> Actually useful! But I realized there are three existing apps that do this well. I use one of them now.</p>
+<h2>In progress</h2>
+<p><strong>A small AI writing tool</strong> for capturing and connecting ideas. Think: a scratchpad that remembers what you cared about. Early stages. I'm cautious about scope creep on this one.</p>
+<hr>
+<p>The ratio here — three shipped, three abandoned, one in progress — is roughly normal for me. The goal isn't a perfect record. The goal is to ship the things that deserve to exist and to recognize quickly when something doesn't.</p>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+  <footer class="site">
+    <span class="spring">© 2026 Damian Makki</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      try { localStorage.setItem('makki.theme', t); } catch(e) {}
+    }
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.dataset.theme;
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+  })();
+</script>
+</body>
+</html>

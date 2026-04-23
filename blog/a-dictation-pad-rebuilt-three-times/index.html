@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-density="comfy">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="128x128" href="/app-icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e0d">
+  <meta name="description" content="Damian Makki — design engineer at Apple, running Ruckus Labs.">
+  <link rel="alternate" type="application/rss+xml" title="makki.pro — Writing" href="/blog/feed.xml">
+  <title>A dictation pad, rebuilt three times</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/blog/blog.css">
+  <script>
+    (function(){try{var t=localStorage.getItem('makki.theme')||'dark';}catch(e){var t='dark';}
+    document.documentElement.dataset.theme=t;
+    document.documentElement.dataset.density='comfy';})();
+  </script>
+</head>
+<body>
+<div class="app">
+  <nav class="top">
+    <div class="nav-inner">
+      <a href="/" class="brand"><span>makki</span><span class="sup">.pro</span></a>
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#/resume">Resume</a>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-enter">
+    <div class="col">
+      <article class="post-body">
+  <div class="post-meta-head">
+    <a href="/blog/" class="back-link">← Writing</a>
+    <span class="date">Dec 08 · 25</span>
+    <span class="date">· 6 min</span>
+    <span class="topic-tag">ai</span>
+  </div>
+
+  <h1 class="hero">A dictation pad, rebuilt three times</h1>
+  <p class="lede">Why the most interesting AI product I use every day is a 200-line app that just transcribes and shuts up.</p>
+
+  <div class="prose">
+    <p>I have a dictation pad. It's a small app that lives in my menu bar, listens when I hold a key, and turns what I say into text. I use it fifty times a day — to write notes, to draft messages, to capture ideas before they evaporate.</p>
+<p>I built it myself. Then I rebuilt it. Then I rebuilt it again.</p>
+<p>Here's what I learned.</p>
+<h2>Version 1: The assistant</h2>
+<p>The first version did what every AI-powered product promises to do: it tried to help. You spoke, it transcribed, and then — eager to be useful — it cleaned up your words, fixed your grammar, removed your verbal tics, and returned something more polished than what you actually said.</p>
+<p>I hated it immediately.</p>
+<p>Not because it was wrong. Often it was right. But the gap between what I said and what it returned made me distrust the output. I couldn't tell which words were mine and which were the model's. The act of dictating became an act of co-authoring with something I hadn't consented to co-author with.</p>
+<h2>Version 2: The summarizer</h2>
+<p>The second version was more ambitious. You could dictate a rambling note and it would produce a structured summary: action items, key points, a cleaner version of your thoughts.</p>
+<p>This one I used for about a month. The summaries were genuinely good. But I noticed a pattern: I was dictating <em>at</em> the app instead of <em>into</em> it. I was performing structured thinking rather than capturing raw thinking, because I knew it was going to summarize.</p>
+<p>The tool was shaping my input before I gave it. That's backwards.</p>
+<h2>Version 3: The stenographer</h2>
+<p>The third version transcribes. That's all. You speak, it writes, it shuts up.</p>
+<p>It's 200 lines of code. It doesn't clean your grammar or fix your filler words or summarize your meaning. It trusts you to know what you meant.</p>
+<p>This is the version I've used every day for eight months.</p>
+<hr>
+<p>The lesson I keep coming back to: an AI feature that does one thing is almost always better than one that tries to do several things. Not because complexity is bad, but because every additional behavior is a decision you're making on behalf of the user. The model is choosing what's important. The model is deciding what you meant.</p>
+<p>Sometimes that's exactly what you want. For a dictation pad, it wasn't.</p>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+  <footer class="site">
+    <span class="spring">© 2026 Damian Makki</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      try { localStorage.setItem('makki.theme', t); } catch(e) {}
+    }
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.dataset.theme;
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+  })();
+</script>
+</body>
+</html>

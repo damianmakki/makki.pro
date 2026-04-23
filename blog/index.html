@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-density="comfy">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="128x128" href="/app-icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e0d">
+  <meta name="description" content="Essays, notes, and experiments by Damian Makki.">
+  <link rel="alternate" type="application/rss+xml" title="makki.pro — Writing" href="/blog/feed.xml">
+  <title>Writing — makki.pro</title>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Person",
+    "name": "Damian Makki",
+    "givenName": "Damian",
+    "familyName": "Makki",
+    "url": "https://makki.pro",
+    "image": "https://makki.pro/favicon.ico",
+    "sameAs": [
+      "https://www.instagram.com/damianmakki/",
+      "https://www.dribbble.com/damianmakki",
+      "https://www.github.com/damianmakki",
+      "https://www.linkedin.com/in/damianmakki",
+      "https://www.strava.com/athletes/6190541",
+      "https://www.facebook.com/damianmakki",
+      "https://www.twitter.com/damianmakki",
+      "https://www.medium.com/@damianmakki",
+      "https://www.ruckuslabs.co"
+    ],
+    "jobTitle": "Designer and Front-End Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Ruckus Labs",
+      "url": "https://www.ruckuslabs.co",
+      "description": "Ruckus Labs is a design and development studio dedicated to the pursuit of empathetic design.",
+      "alternateName": [
+        "Ruckus",
+        "Ruckus Labs",
+        "RuckusLabs",
+        "Ruckus Labs Design",
+        "Ruckus Design",
+        "Ruckus Design Labs"
+      ],
+      "founder": "Damian Makki"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Arizona",
+      "url": "https://www.arizona.edu/"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/blog/blog.css">
+  <script>
+    (function(){
+      try{var t=localStorage.getItem('makki.theme');}catch(e){var t=null;}
+      if(!t){t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}
+      document.documentElement.dataset.theme=t;
+      document.documentElement.dataset.density='comfy';
+      window.__makkiThemeDefault=true;
+      window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',function(e){
+        if(window.__makkiThemeDefault){document.documentElement.dataset.theme=e.matches?'dark':'light';}
+      });
+    })();
+  </script>
+</head>
+<body>
+<div class="app">
+  <nav class="top">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/resume">Resume</a>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-enter">
+    <div class="col">
+      <div class="resume-header">
+  <div>
+    <h1 class="hero" style="margin-bottom:6px">Writing</h1>
+    <p style="color:var(--fg-muted);margin:0;font-size:14px">Essays, notes, and experiments. 1 posts.</p>
+  </div>
+  <a href="/blog/feed.xml" class="download-btn">
+    RSS
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5" fill="currentColor"/>
+    </svg>
+  </a>
+</div>
+
+<div class="topic-bar" id="topic-bar">
+  <span class="topic active" data-filter="all">All</span>
+  <span class="topic" data-filter="ai">AI</span>
+  <span class="topic" data-filter="design">Design</span>
+  <span class="topic" data-filter="engineering">Engineering</span>
+  <span class="topic" data-filter="notebook">Notebook</span>
+</div>
+
+
+  
+
+
+<div class="post-list" id="post-list">
+  
+    
+    <article class="post" data-topic="ai" data-url="/blog/demo/">
+      <span class="date">Apr 22 · 26</span>
+      <div class="body">
+        <h3>Demo</h3>
+        <p class="excerpt">Demo</p>
+      </div>
+      <span class="read">2 min</span>
+    </article>
+    
+  
+</div>
+
+<script>
+  (function() {
+    var chips = document.querySelectorAll('#topic-bar .topic');
+    var featured = document.querySelector('.post.featured');
+    var posts = document.querySelectorAll('#post-list .post');
+
+    chips.forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        var filter = chip.dataset.filter;
+        chips.forEach(function(c) { c.classList.remove('active'); });
+        chip.classList.add('active');
+
+        if (featured) {
+          featured.style.display = (filter === 'all' || featured.dataset.topic === filter) ? '' : 'none';
+        }
+        posts.forEach(function(post) {
+          post.style.display = (filter === 'all' || post.dataset.topic === filter) ? '' : 'none';
+        });
+      });
+    });
+
+    posts.forEach(function(post) {
+      post.addEventListener('click', function() {
+        var url = post.dataset.url;
+        if (url) { window.location.href = url; }
+      });
+    });
+  })();
+</script>
+
+    </div>
+  </main>
+
+  <footer class="site">
+    <span class="spring">© 2026 Damian Makki</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      try { localStorage.setItem('makki.theme', t); } catch(e) {}
+    }
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.dataset.theme;
+        window.__makkiThemeDefault=false;
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+  })();
+</script>
+</body>
+</html>

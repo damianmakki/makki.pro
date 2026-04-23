@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-density="comfy">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="128x128" href="/app-icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e0d">
+  <meta name="description" content="Damian Makki — design engineer at Apple, running Ruckus Labs.">
+  <link rel="alternate" type="application/rss+xml" title="makki.pro — Writing" href="/blog/feed.xml">
+  <title>Notes from a week offline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/blog/blog.css">
+  <script>
+    (function(){try{var t=localStorage.getItem('makki.theme')||'dark';}catch(e){var t='dark';}
+    document.documentElement.dataset.theme=t;
+    document.documentElement.dataset.density='comfy';})();
+  </script>
+</head>
+<body>
+<div class="app">
+  <nav class="top">
+    <div class="nav-inner">
+      <a href="/" class="brand"><span>makki</span><span class="sup">.pro</span></a>
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#/resume">Resume</a>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-enter">
+    <div class="col">
+      <article class="post-body">
+  <div class="post-meta-head">
+    <a href="/blog/" class="back-link">← Writing</a>
+    <span class="date">Feb 09 · 26</span>
+    <span class="date">· 4 min</span>
+    <span class="topic-tag">notebook</span>
+  </div>
+
+  <h1 class="hero">Notes from a week offline</h1>
+  <p class="lede">Seven days, no phone, a lot of paper. What I noticed about my own attention when the feed went away.</p>
+
+  <div class="prose">
+    <p>I left my phone in a drawer on a Sunday and didn't pick it up again until the following Sunday. These are notes from that week.</p>
+<p><strong>Day 1.</strong> I reached for my phone eleven times that I counted, and probably thirty times that I didn't. The muscle memory is real. My hand moves toward where my phone would be in my pocket before my brain has decided to check anything.</p>
+<p><strong>Day 2.</strong> The thing I miss most isn't Instagram or news. It's maps. I drove to two places I'd never been and had to print directions. Printing directions. I felt like a time traveler.</p>
+<p><strong>Day 3.</strong> I read for four hours straight. Not because I planned to — I just had nothing else to reach for when I finished a chapter. The next chapter was right there.</p>
+<p><strong>Day 4.</strong> I had a thought that I wanted to write down and couldn't find a notebook. Spent ten minutes looking. Found one in a junk drawer with three pages used. Couldn't remember what the thought was by the time I found it.</p>
+<p><strong>Day 5.</strong> My kids noticed I wasn't on my phone. My daughter asked if I was sick.</p>
+<p><strong>Day 6.</strong> Boredom. Real, old-fashioned boredom. I didn't hate it as much as I expected.</p>
+<p><strong>Day 7.</strong> I started a list of things I wanted to look up when I got my phone back. By Sunday the list had eleven things on it. I looked up two of them. The other nine, it turns out, I didn't actually need to know.</p>
+<hr>
+<p>I'm not going to tell you to do this. But I will say: the week was cheaper than therapy and taught me more about my own attention than anything else I've tried. The feed is loud. Silence is information too.</p>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+  <footer class="site">
+    <span class="spring">© 2026 Damian Makki</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      try { localStorage.setItem('makki.theme', t); } catch(e) {}
+    }
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.dataset.theme;
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+  })();
+</script>
+</body>
+</html>

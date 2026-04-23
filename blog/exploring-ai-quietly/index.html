@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-density="comfy">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="128x128" href="/app-icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e0d">
+  <meta name="description" content="Damian Makki — design engineer at Apple, running Ruckus Labs.">
+  <link rel="alternate" type="application/rss+xml" title="makki.pro — Writing" href="/blog/feed.xml">
+  <title>Exploring AI, quietly: six months of small experiments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/blog/blog.css">
+  <script>
+    (function(){try{var t=localStorage.getItem('makki.theme')||'dark';}catch(e){var t='dark';}
+    document.documentElement.dataset.theme=t;
+    document.documentElement.dataset.density='comfy';})();
+  </script>
+</head>
+<body>
+<div class="app">
+  <nav class="top">
+    <div class="nav-inner">
+      <a href="/" class="brand"><span>makki</span><span class="sup">.pro</span></a>
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#/resume">Resume</a>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-enter">
+    <div class="col">
+      <article class="post-body">
+  <div class="post-meta-head">
+    <a href="/blog/" class="back-link">← Writing</a>
+    <span class="date">Apr 03 · 26</span>
+    <span class="date">· 12 min</span>
+    <span class="topic-tag">ai</span>
+  </div>
+
+  <h1 class="hero">Exploring AI, quietly: six months of small experiments</h1>
+  <p class="lede">I spent the last two quarters building unserious tools with models — a kitchen timer that listens, a dictation pad, a tiny agent that edits my calendar — and here&#39;s what I learned about where this actually belongs in everyday life.</p>
+
+  <div class="prose">
+    <p>Six months ago I gave myself a constraint: only build things I'd actually use. No demos, no portfolios, no side projects designed to impress. Just tools.</p>
+<p>What followed was a quiet education. Not in AI's capabilities — I already had a reasonable grasp of those — but in the enormous gap between what models <em>can</em> do and what they actually <em>should</em> do in everyday life.</p>
+<h2>The kitchen timer experiment</h2>
+<p>The first thing I built was almost embarrassingly simple: a timer that listens. You say &quot;remind me in twenty minutes&quot; or &quot;pull the pasta at 8:15&quot; and it sets a timer. No buttons, no taps, no screen.</p>
+<p>It works perfectly about 80% of the time. The other 20% is a fascinating study in edge cases — background noise, ambiguous phrasing, the specific way my kids yell &quot;hey&quot; before saying anything meaningful.</p>
+<p>What surprised me was the 80%. That's high enough to be genuinely useful, and low enough to keep you honest about what you're depending on.</p>
+<h2>The dictation pad</h2>
+<p>I've been using a voice-to-text dictation pad for over a year now. But this summer I rebuilt it three times.</p>
+<p>The first version transcribed and formatted. The second version transcribed, formatted, and summarized. The third version just transcribed and shut up.</p>
+<p>The third version is the one I use every day.</p>
+<p>There's a lesson there about what AI products should do: less is almost always more. The model's job is to faithfully record what I said, not to interpret it, improve it, or tell me what I meant.</p>
+<h2>On the calendar agent</h2>
+<p>The calendar agent is the most ambitious thing on this list and the least finished. The idea: a small agent that looks at my week and proposes rearrangements based on my stated priorities.</p>
+<p>I got it working. It's smart enough to recognize that &quot;deep work&quot; and &quot;three back-to-back meetings&quot; are in conflict. It suggests blocks, moves things, explains its reasoning.</p>
+<p>I stopped using it after two weeks. Not because it was bad, but because the negotiation cost was too high. Every suggestion required me to think about whether it was right, which took more energy than just managing my calendar myself.</p>
+<hr>
+<p>I don't have a clean conclusion. I'm still building. The honest summary is: small tools, used daily, beat ambitious tools, used occasionally. And the best AI feature is often the one that does exactly one thing without trying to do anything else.</p>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+  <footer class="site">
+    <span class="spring">© 2026 Damian Makki</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      try { localStorage.setItem('makki.theme', t); } catch(e) {}
+    }
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.dataset.theme;
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+  })();
+</script>
+</body>
+</html>

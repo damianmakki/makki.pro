@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-density="comfy">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="128x128" href="/app-icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e0d">
+  <meta name="description" content="Damian Makki — design engineer at Apple, running Ruckus Labs.">
+  <link rel="alternate" type="application/rss+xml" title="makki.pro — Writing" href="/blog/feed.xml">
+  <title>Designing the seam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/blog/blog.css">
+  <script>
+    (function(){try{var t=localStorage.getItem('makki.theme')||'dark';}catch(e){var t='dark';}
+    document.documentElement.dataset.theme=t;
+    document.documentElement.dataset.density='comfy';})();
+  </script>
+</head>
+<body>
+<div class="app">
+  <nav class="top">
+    <div class="nav-inner">
+      <a href="/" class="brand"><span>makki</span><span class="sup">.pro</span></a>
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#/resume">Resume</a>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-enter">
+    <div class="col">
+      <article class="post-body">
+  <div class="post-meta-head">
+    <a href="/blog/" class="back-link">← Writing</a>
+    <span class="date">Aug 18 · 25</span>
+    <span class="date">· 10 min</span>
+    <span class="topic-tag">design</span>
+  </div>
+
+  <h1 class="hero">Designing the seam</h1>
+  <p class="lede">Most product design happens at the edges between teams. Here&#39;s how I think about making those edges disappear.</p>
+
+  <div class="prose">
+    <p>There's a type of design problem that doesn't get written about much, because it's unglamorous and hard to show in a portfolio: the seam.</p>
+<p>The seam is where two teams' work meets. It's the transition between the checkout flow (owned by the commerce team) and the account settings (owned by the identity team). It's the handoff between the onboarding experience (growth) and the core product (product). It's the moment in a user's journey where you can tell, if you look, that different people built different parts.</p>
+<p>Most product design happens at the seam. And most products look like it.</p>
+<h2>Why seams exist</h2>
+<p>Seams exist because organizations exist. Large products are built by multiple teams, each with their own roadmap, their own designer, their own definition of done. Each team ships their part. The joins are nobody's explicit responsibility.</p>
+<p>This isn't a failure of process. It's a natural result of how software gets built at scale. The question isn't how to prevent seams — they're inevitable — but how to design them intentionally.</p>
+<h2>What seams look like in practice</h2>
+<p>A few examples from products I've used in the last week:</p>
+<ul>
+<li>An e-commerce app where the cart screen uses a different button style from the product detail screen, because the cart was built by a different team two years earlier.</li>
+<li>A SaaS product where the onboarding flow uses a full-screen layout but the core product uses a sidebar layout, with no transition between them.</li>
+<li>A mobile app where the notification settings screen (built by the platform team) has a completely different visual style from every other settings screen.</li>
+</ul>
+<p>In each case, you can feel the seam. The product stops feeling like one thing and starts feeling like several things assembled.</p>
+<h2>How I think about designing the seam</h2>
+<p><strong>Name the seam first.</strong> In most design processes, the seam is invisible — it's the space between your designs and someone else's. Making it visible, literally putting it in the design file, forces a conversation about who owns it.</p>
+<p><strong>Design the transition, not just the destination.</strong> When two experiences need to connect, design the moment of connection explicitly. What does the user see as they move from one to the other? What carries through — visual language, state, context?</p>
+<p><strong>Advocate for a responsible party.</strong> Every seam needs someone who feels accountable for it. In my experience, this is almost always the designer who noticed it. Noticing the seam is already most of the job.</p>
+<p><strong>Accept that you'll lose most of these fights.</strong> Seams persist because fixing them requires coordination across teams, and coordination is expensive. The goal isn't to eliminate every seam — it's to make sure the most important ones get deliberate attention.</p>
+<hr>
+<p>The products I admire most feel like they were made by one person with a singular vision, even when I know they were made by hundreds of people over many years. That's not an accident. It's the result of someone, or a culture, caring about the seams.</p>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+  <footer class="site">
+    <span class="spring">© 2026 Damian Makki</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      try { localStorage.setItem('makki.theme', t); } catch(e) {}
+    }
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.dataset.theme;
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+  })();
+</script>
+</body>
+</html>

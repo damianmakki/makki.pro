@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-density="comfy">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="128x128" href="/app-icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e0d">
+  <meta name="description" content="Damian Makki — design engineer at Apple, running Ruckus Labs.">
+  <link rel="alternate" type="application/rss+xml" title="makki.pro — Writing" href="/blog/feed.xml">
+  <title>The case for writing less JavaScript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/blog/blog.css">
+  <script>
+    (function(){try{var t=localStorage.getItem('makki.theme')||'dark';}catch(e){var t='dark';}
+    document.documentElement.dataset.theme=t;
+    document.documentElement.dataset.density='comfy';})();
+  </script>
+</head>
+<body>
+<div class="app">
+  <nav class="top">
+    <div class="nav-inner">
+      <a href="/" class="brand"><span>makki</span><span class="sup">.pro</span></a>
+      <div class="nav-links">
+        <a href="/">About</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#/resume">Resume</a>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-enter">
+    <div class="col">
+      <article class="post-body">
+  <div class="post-meta-head">
+    <a href="/blog/" class="back-link">← Writing</a>
+    <span class="date">Feb 27 · 26</span>
+    <span class="date">· 11 min</span>
+    <span class="topic-tag">engineering</span>
+  </div>
+
+  <h1 class="hero">The case for writing less JavaScript</h1>
+  <p class="lede">A tour of the patterns I&#39;ve been reaching for lately — view transitions, declarative shadow DOM, and why I stopped using three framework features entirely.</p>
+
+  <div class="prose">
+    <p>I've been writing JavaScript professionally for over a decade. I'm good at it. And I've spent the last year trying to write as little of it as possible.</p>
+<p>Not because JavaScript is bad. Because the web platform has gotten genuinely, substantively better, and I kept reaching for JavaScript to solve problems the browser now solves itself.</p>
+<h2>View Transitions</h2>
+<p>The View Transitions API landed in Chrome, then Safari, then Firefox. It lets you animate between page states — or actual page navigations — with a simple API wrapper and a few lines of CSS.</p>
+<p>Before this, you needed a framework, a router, and a state management strategy just to do a fade between pages. Now:</p>
+<pre><code class="language-js">document.startViewTransition(() =&gt; {
+  document.querySelector('.content').innerHTML = newContent;
+});
+</code></pre>
+<p>That's it. The browser handles the snapshot, the animation, the cleanup. CSS controls the timing and easing. The JavaScript footprint is three lines.</p>
+<h2>Declarative Shadow DOM</h2>
+<p>Declarative Shadow DOM lets you ship web components that are server-rendered without JavaScript. The shadow DOM attaches via HTML alone:</p>
+<pre><code class="language-html">&lt;my-button&gt;
+  &lt;template shadowrootmode=&quot;open&quot;&gt;
+    &lt;style&gt;button { ... }&lt;/style&gt;
+    &lt;button&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/button&gt;
+  &lt;/template&gt;
+  Click me
+&lt;/my-button&gt;
+</code></pre>
+<p>No <code>customElements.define</code>. No JS required for the initial render. Progressive enhancement falls out naturally.</p>
+<h2>The three framework features I stopped using</h2>
+<p><strong>1. Client-side routing for simple sites.</strong> If you don't have truly dynamic state that needs to persist across navigations, you don't need a client-side router. MPA with view transitions is faster, simpler, and more resilient.</p>
+<p><strong>2. Component-level data fetching on page load.</strong> For most content, fetch it on the server. Return HTML. The component doesn't need to know about it.</p>
+<p><strong>3. Global state management for UI state.</strong> CSS custom properties, URL state, and <code>localStorage</code> cover 90% of what people reach for Redux or Zustand to handle. The 10% that remains is where a proper state library actually earns its place.</p>
+<hr>
+<p>None of this is a polemic against frameworks. I use React every day; this site is built with it. The point is that frameworks are most valuable when you reach for them deliberately, for the things they actually do better than the platform. The platform is catching up fast.</p>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+  <footer class="site">
+    <span class="spring">© 2026 Damian Makki</span>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      try { localStorage.setItem('makki.theme', t); } catch(e) {}
+    }
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.dataset.theme;
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    }
+  })();
+</script>
+</body>
+</html>
