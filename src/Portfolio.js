@@ -19,6 +19,8 @@ function useTheme() {
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = theme === 'dark' ? '#0e0e0d' : '#fbfbfa';
   }, [theme]);
 
   useEffect(() => {
@@ -105,7 +107,7 @@ export default function Portfolio() {
           <Route path="/resume" element={<PageWrapper><Resume /></PageWrapper>} />
         </Routes>
         <footer className="site">
-          <span className="spring">© {new Date().getFullYear()} Damian Makki</span>
+          <span className="spring">© 2011 – {new Date().getFullYear()} Damian Makki</span>
         </footer>
       </div>
     </BrowserRouter>
