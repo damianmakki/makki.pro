@@ -61,12 +61,12 @@
   border-bottom: 1px solid var(--border);
 }
 .entry .years {
-  color: var(--fg-subtle);
+  color: var(--fg-muted);
   font-size: 12px;
   font-family: var(--font-mono);
   padding-top: 3px;
 }
-.entry h4 {
+.entry h3 {
   margin: 0 0 4px;
   font-size: 15px;
   font-weight: 600;
@@ -81,7 +81,7 @@
   font-weight: 500;
 }
 .entry p {
-  font-size: 13px;
+  font-size: 14px;
   margin: 0;
 }
 .entry .tags {

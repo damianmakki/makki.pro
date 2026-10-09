@@ -27,13 +27,13 @@ npm run start:blog # Eleventy blog   → localhost:8081/blog/
 npm run build
 ```
 
-This runs both steps in order — React first (which wipes `build/`), then Eleventy (which writes into `build/blog/`). The combined output in `build/` is what gets deployed.
+This generates the résumé PDF, builds React (which wipes `build/`), adds the direct résumé entrypoint, then builds Eleventy into the same output. The combined output in `build/` is what gets deployed.
 
 To build each part individually:
 
 ```bash
 npm run build:react  # CRA build → build/
-npm run build:blog   # Eleventy  → build/blog/
+npm run build:blog   # Eleventy  → build/blog/ pages
 ```
 
 > **Note:** Always run `build:react` before `build:blog`. CRA wipes the `build/` directory on each run, which would delete the Eleventy output if the order were reversed.
@@ -99,3 +99,20 @@ public/             Static assets (CNAME, favicon, etc.)
 
 - [Eleventy](https://github.com/11ty/eleventy)
 - [React](https://github.com/facebook/react)
+
+## Résumé download and descriptions
+
+The existing React layout is retained. `src/data/career.json` feeds the compact web résumé and the complete PDF. Descriptions marked `draft` stay in `content-review/resume-copy.md`; only `approved` descriptions and existing writing/talk summaries appear publicly. Review the draft wording, verify the claims and dates, then set accepted entries to `approved`.
+
+Install the PDF tooling once:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
+
+Run `npm run build:pdf` to refresh the download before local React development. `npm run build` regenerates it automatically. The generator uses `.venv/bin/python`, or `PYTHON` if supplied. The generated PDF is copied to `public/` for the existing React build.
+
+`npm run test:site` validates generated metadata and the PDF. `CI=true npm test -- --watchAll=false` checks the compact résumé and draft visibility. Deployment remains a separate step.
+
+The generated `build/resume/index.html` is the existing React shell with résumé-specific metadata, allowing `/resume` and `/resume/` to load directly on GitHub Pages. Content still renders through React; this refinement does not migrate or pre-render the application.

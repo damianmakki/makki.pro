@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'blog-src/blog.css': 'blog/blog.css' });
 
   eleventyConfig.addCollection('posts', api =>
-    api.getFilteredByGlob('posts/*.md').sort((a, b) => b.date - a.date)
+    api.getFilteredByGlob('posts/*.md').filter(post => !post.data.noindex).sort((a, b) => b.date - a.date)
   );
 
   eleventyConfig.addFilter('shortDate', date => {
@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: 'posts',
       includes: '../blog-src/_includes',
-      output: 'build/blog',
+      output: 'build',
     },
     markdownTemplateEngine: 'njk',
   };

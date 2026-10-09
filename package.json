@@ -24,10 +24,12 @@
     "start:blog": "eleventy --serve --port=8081",
     "dev": "concurrently \"npm run start\" \"npm run start:blog\"",
     "build:react": "react-scripts build",
-    "build:blog": "eleventy && mkdir -p public/blog && cp -R build/blog/blog/* public/blog/",
-    "build": "npm run build:react && npm run build:blog",
+    "build:blog": "eleventy",
+    "build": "npm run build:pdf && npm run build:react && node scripts/prepare-pages.cjs && npm run build:blog",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:pdf": "node scripts/build-pdf.cjs",
+    "test:site": "node --test scripts/refinements.test.cjs && node scripts/run-python.cjs scripts/verify_pdf.py"
   },
   "eslintConfig": {
     "extends": [

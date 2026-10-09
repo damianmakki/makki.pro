@@ -83,8 +83,20 @@ function PageWrapper({ children }) {
       '/resume': 'Resume | Damian Makki | Designer and Front-End Developer'
     };
     
-    const title = titleMap[pathname] || 'Damian Makki | Designer and Front-End Developer';
+    const path = pathname.replace(/\/$/, '') || '/';
+    const title = titleMap[path] || 'Damian Makki | Designer and Front-End Developer';
     document.title = title;
+    const description = path === '/resume'
+      ? 'Damian Makki’s experience in design and front-end development at Apple, Aya Healthcare, and independent projects. Download his complete résumé.'
+      : 'Damian Makki — designer and front-end developer at Apple, running Ruckus Labs. Explore projects and professional experience.';
+    const canonical = `https://makki.pro${path === '/' ? '/' : `${path}/`}`;
+    document.querySelector('meta[name="description"]').content = description;
+    document.querySelector('link[rel="canonical"]').href = canonical;
+    for (const [key, value] of Object.entries({ 'og:title': title, 'og:description': description, 'og:url': canonical })) {
+      document.querySelector(`meta[property="${key}"]`).content = value;
+    }
+    document.querySelector('meta[name="twitter:title"]').content = title;
+    document.querySelector('meta[name="twitter:description"]').content = description;
   }, [pathname]);
   
   return (

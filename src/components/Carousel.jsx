@@ -16,22 +16,27 @@ import VeryCoolWeekly from '../images/carousel/verycoolweekly.svg';
 const CARDS = [
   {
     type: 'full-bleed',
+    title: 'Ruckus Labs',
     href: 'https://www.ruckuslabs.co',
     image: RuckusLabsLogo,
   },
   {
     type: 'full-bleed',
-    href: 'https://damianmakki.github.io/trace/',
+    title: 'Trace',
+    href: 'https://www.ruckuslabs.co/trace',
     image: TraceLogo,
     bg: '#fff',
   },
   {
     type: 'full-bleed',
+    title: 'Somatic',
     image: SomaticLogo,
+    href: 'https://www.ruckuslabs.co/somatic',
     bg: '#ffffff',
   },
   {
     type: 'full-bleed',
+    title: 'Very Cool Weekly',
     href: 'https://damianmakki.github.io/verycoolweekly/',
     image: VeryCoolWeekly,
   },
@@ -134,11 +139,11 @@ export default function Carousel() {
                 <div className="card-media">
                   {card.type === 'full-bleed' && (
                     <div className="full-bleed-container" style={{ background: card.bg || 'var(--bg-elev)' }}>
-                      <img src={card.image} alt="Logo" className="full-bleed-image" draggable="false" />
+                      <img src={card.image} alt={card.title} className="full-bleed-image" draggable="false" />
                     </div>
                   )}
                   {card.type === 'standard' && (
-                    <img src={card.heroImage} alt="Hero" className="hero-image" draggable="false" />
+                    <img src={card.heroImage} alt={card.title} className="hero-image" draggable="false" />
                   )}
                 </div>
                 {card.type === 'standard' && (
