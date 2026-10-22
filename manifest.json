@@ -3,9 +3,9 @@
   "name": "Damian's makki.pro Portfolio",
   "icons": [
     {
-      "src": "../src/images/app-icon.jpg",
+      "src": "/app-icon.jpg",
       "sizes": "128x128 64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/jpeg"
     }
   ],
   "start_url": ".",

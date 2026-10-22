@@ -4,18 +4,10 @@
   <subtitle>Essays, notes, and experiments by Damian Makki.</subtitle>
   <link href="https://makki.pro/blog/feed.xml" rel="self"/>
   <link href="https://makki.pro/blog/"/>
-  <updated>2026-04-23T00:00:00.000Z</updated>
+  <updated>2026-10-22T15:13:01.074Z</updated>
   <id>https://makki.pro/blog/</id>
   <author>
     <name>Damian Makki</name>
   </author>
-  
-  <entry>
-    <title>Demo</title>
-    <link href="https://makki.pro/blog/demo/"/>
-    <id>https://makki.pro/blog/demo/</id>
-    <updated>2026-04-23T00:00:00.000Z</updated>
-    <summary>Demo</summary>
-  </entry>
   
 </feed>
