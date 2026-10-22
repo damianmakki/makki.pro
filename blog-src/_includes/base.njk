@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#0e0e0d">
   <meta name="description" content="{{ description or 'Damian Makki — design engineer at Apple, running Ruckus Labs.' }}">
   <link rel="alternate" type="application/rss+xml" title="makki.pro — Writing" href="/blog/feed.xml">
+  {% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
   <title>{{ title or 'Damian Makki — makki.pro' }}</title>
   <script type="application/ld+json">
   {

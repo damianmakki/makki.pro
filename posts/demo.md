@@ -1,5 +1,6 @@
 ---
 title: "Demo"
+noindex: true
 date: 2026-04-23
 topic: ai
 excerpt: "Demo"

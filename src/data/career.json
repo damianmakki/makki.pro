@@ -1,0 +1,324 @@
+{
+  "updated": "2026-10-08",
+  "name": "Damian Makki",
+  "email": "damian@makki.pro",
+  "url": "https://makki.pro",
+  "subtitle": "Designer & front-end developer",
+  "intro": "I build at the seam between design and development, with work spanning products, brands, and independent projects. Currently at Apple and running Ruckus Labs, a small design studio.",
+  "sections": [
+    {
+      "id": "corporate",
+      "title": "Corporate Experience",
+      "entries": [
+        {
+          "name": "Apple",
+          "role": "Front-End Developer",
+          "dates": "2021 - Present",
+          "url": "https://www.apple.com/store",
+          "summary": "Bringing design details to life through polished, carefully built interfaces.",
+          "description": "Developed interfaces for the Apple online store and supported product launches alongside design, accessibility, and quality assurance teams. Worked across design and implementation to deliver polished shopping experiences.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm online store / Apple Store App scope and NPI responsibilities. Transaction volume, workshops, and team size omitted pending confirmation."
+        },
+        {
+          "name": "Aya Healthcare",
+          "role": "Senior Front-End Developer",
+          "dates": "2018 - 2021",
+          "url": "https://www.ayahealthcare.com",
+          "summary": "Translating complex requirements into clear, usable web experiences for healthcare.",
+          "description": "Designed and developed web platforms with product teams, translating customer needs into interfaces and features. Contributed to delivery processes and supported collaboration across design and development.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm platforms, feature examples, and process contributions. Eight platforms, engagement claims, and award omitted."
+        },
+        {
+          "name": "Vuforia",
+          "role": "UI & UX Designer",
+          "dates": "2018",
+          "url": "https://developer.vuforia.com/home",
+          "summary": "Exploring layouts and interactions that make complex product workflows easier to navigate.",
+          "description": "Explored interface layouts and interaction patterns for Vuforia, translating product workflows into UI concepts and user experience designs.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm product, platform, and deliverables. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Lawline",
+          "role": "Lead Designer",
+          "dates": "2013 - 2015",
+          "url": "https://www.lawline.com",
+          "summary": "Shaping visual direction and bringing consistency to the digital experience.",
+          "description": "Led design work for Lawline, shaping visual direction and translating requirements into design deliverables. Collaborated with stakeholders to bring consistency to the experience.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm responsibilities and shipped work. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "CURB",
+          "role": "Designer",
+          "dates": "2012 - 2013",
+          "url": "https://www.gocurb.com/",
+          "summary": "Creating interfaces and visual assets for Taxi Magic and Sedan Magic.",
+          "description": "Contributed visual and interface design work for Taxi Magic and Sedan Magic. Developed design assets to support a consistent experience across the brands.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm naming at time of employment and design scope. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Stevens Institute of Technology",
+          "role": "Designer",
+          "dates": "2012",
+          "url": "https://www.stevens.edu/",
+          "summary": "Turning ideas and information into clear visual communications.",
+          "description": "Created design materials for Stevens Institute of Technology, translating communication needs into clear visual layouts.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm institution spelling and engagement deliverables. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Vivid Software Solutions",
+          "role": "Designer",
+          "dates": "2011 - 2012",
+          "url": "https://www.vividsoftwaresolutions.com/",
+          "summary": "Creating layouts and visual assets for a range of client projects.",
+          "description": "Contributed visual design for Vivid Software Solutions, developing layouts and assets for client projects.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm design scope and client work. Candidate wording; confirm every contribution and deliverable before approval."
+        }
+      ]
+    },
+    {
+      "id": "startup",
+      "title": "Startup Experience",
+      "entries": [
+        {
+          "name": "FittMatch",
+          "role": "Developer",
+          "dates": "2026",
+          "url": "https://fittmatch.fit/",
+          "summary": "Building a marketplace that connects fitness coaches with gyms, studios, and their next opportunity.",
+          "description": "Contributed development work to FittMatch, translating product requirements into functional features and interfaces.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Live-only entry. Confirm dates, title, spelling, and scope. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Job Boardly",
+          "role": "Designer",
+          "dates": "2025",
+          "url": "https://www.jobboardly.com/",
+          "summary": "Exploring visual concepts and refining layouts for the product experience.",
+          "description": "Created design work for Job Boardly, developing visual concepts and refining layouts for the project.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Duplicate live entry merged. Confirm dates and deliverables. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Schvitzin'",
+          "role": "Brand and Graphic Designer",
+          "dates": "2024 - Present",
+          "url": "https://schvitzin.com/",
+          "summary": "Translating a brand’s personality into graphics and visual materials.",
+          "description": "Contributed brand and graphic design for Schvitzin', translating the brand direction into visual assets and materials.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm ongoing engagement and deliverable types. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Little Herb Places",
+          "role": "Designer and Developer",
+          "dates": "2024",
+          "url": "https://www.littleherbplaces.com/",
+          "summary": "Building a directory to help people discover independent herb shops, herbalists, and gardens.",
+          "description": "Designed and developed Little Herb Places, shaping the visual experience and translating it into a working website.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm functionality and contribution. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Glamping on Wine",
+          "role": "Designer, Restorer, and Maid",
+          "dates": "2023",
+          "url": "https://www.glampingonwine.com/",
+          "summary": "Bringing a place to life through design, restoration, and the everyday work of caring for it.",
+          "description": "Combined design, restoration, and hands-on upkeep for Glamping on Wine, working across the physical experience and its presentation.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm scope and whether playful title should stay in PDF. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Welcome",
+          "role": "Presentation Designer",
+          "dates": "2021",
+          "url": "https://www.experiencewelcome.com/",
+          "summary": "Turning company and product stories into clear, visually engaging presentations.",
+          "description": "Designed presentation materials for Welcome, organizing content and visual layouts to communicate the company and its product clearly.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm deck purpose and scope. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Journey",
+          "role": "Designer",
+          "dates": "2021",
+          "url": "https://journey.live/",
+          "summary": "Taking project goals from early visual concepts through to finished creative work.",
+          "description": "Contributed design work for Journey, translating project goals into visual concepts and finished design assets.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm engagement scope. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "F45 Training",
+          "role": "Designer",
+          "dates": "2018 - 2021",
+          "url": "https://www.f45training.com/",
+          "summary": "Carrying the brand’s visual identity across design materials and communications.",
+          "description": "Created design materials for F45 Training, applying brand direction across visual assets and communications.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm client entity and scope. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Chicory",
+          "role": "Designer and Developer",
+          "dates": "2017 - 2020",
+          "url": "https://www.chicory.co/",
+          "summary": "Connecting visual design with working interfaces, from initial concept to implementation.",
+          "description": "Combined design and development for Chicory, translating visual concepts into implemented experiences. Worked across both disciplines to keep the final execution consistent with the design.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm project, stack, and deliverables. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Molo",
+          "role": "Designer",
+          "dates": "2017 - 2020",
+          "url": "https://getmolo.com/",
+          "summary": "Exploring visual directions and refining layouts around the needs of the project.",
+          "description": "Created design work for Molo, exploring visual concepts and refining layouts around project requirements.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm design scope. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Orangetheory Fitness",
+          "role": "Designer",
+          "dates": "2016 - 2018",
+          "url": "https://www.orangetheoryfitness.com/",
+          "summary": "Translating visual direction into cohesive branded materials.",
+          "description": "Contributed design materials for Orangetheory Fitness, adapting visual direction into assets for the engagement.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm brand spelling, client entity, and scope. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Sammich Shop",
+          "role": "Cofounder",
+          "dates": "2016 - 2017",
+          "url": null,
+          "summary": "Helping shape a new venture, balancing creative direction with the practical work of building a business.",
+          "description": "Cofounded Sammich Shop, helping shape the venture and its direction. Combined creative work with the practical responsibilities of building a business.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm venture description and responsibilities. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Neso",
+          "role": "Brand Designer",
+          "dates": "2014 - 2015",
+          "url": "https://www.neso.com/",
+          "summary": "Developing visual concepts and brand assets that work together as a consistent identity.",
+          "description": "Contributed brand design for Neso, developing visual concepts and assets to express a consistent identity.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm identity and deliverables. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Sourced Adventures",
+          "role": "Lead Designer and Developer",
+          "dates": "2013 - 2023",
+          "url": "https://www.sourcedadventures.com/",
+          "summary": "Connecting design and development across a decade of work on the company’s digital presence.",
+          "description": "Led design and development for Sourced Adventures across a decade-long engagement. Connected visual design with implementation to support the company's digital presence.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm duration, scope, and shipped projects. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Tequila Avión",
+          "role": "Designer",
+          "dates": "2013",
+          "url": "https://tequilaavion.com/",
+          "summary": "Creating visual assets that carry the brand into the details of its presentation.",
+          "description": "Contributed design work for Tequila Avión, creating visual assets in support of the engagement.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm engagement and deliverable types. Candidate wording; confirm every contribution and deliverable before approval."
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Personal Projects",
+      "entries": [
+        {
+          "name": "Somatic",
+          "role": "Founder",
+          "dates": "2026",
+          "url": "https://www.ruckuslabs.co/somatic",
+          "summary": "An iPhone workout tracker built around recovery, simple logging, and keeping personal data on-device.",
+          "description": "Founded Somatic and brought together product direction, interface design, and development. Shaped the project from early concepts into an independent product.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Live site says Founder; checkout says Designer and Developer. Confirm title, product description, and URL. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Ruckus Labs",
+          "role": "Owner",
+          "dates": "2012 - Present",
+          "url": "https://www.ruckuslabs.co/",
+          "summary": "An independent studio bringing design and development together for client work and personal projects.",
+          "description": "Run Ruckus Labs, a small design studio spanning design and development. Bring together visual thinking and implementation across client work and independent projects.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm services, role title, and ongoing dates. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Trace",
+          "role": "Designer and Developer",
+          "dates": "2026",
+          "url": "https://www.ruckuslabs.co/trace",
+          "summary": "A macOS utility that overlays design screenshots on running apps for pixel-by-pixel comparison.",
+          "description": "Designed and developed Trace, bringing together product thinking, interface design, and implementation in an independent project.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Live URL differs from checkout. Confirm canonical destination and product purpose. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "RunItBack",
+          "role": "Designer and Developer",
+          "dates": "2021",
+          "url": "https://ruckuslabs.github.io/runitback/",
+          "summary": "An independent experiment in taking a product idea from concept to a working experience.",
+          "description": "Designed and developed RunItBack, translating an independent project concept into an implemented experience.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm purpose and current URL. Candidate wording; confirm every contribution and deliverable before approval."
+        },
+        {
+          "name": "Very Cool Weekly",
+          "role": "Editor",
+          "dates": "2017",
+          "url": "https://damianmakki.github.io/verycoolweekly/",
+          "summary": "Selecting stories and shaping an independent publication through curation and editorial work.",
+          "description": "Edited Very Cool Weekly, shaping the publication through content selection and editorial work.",
+          "reviewStatus": "draft",
+          "reviewNotes": "Confirm publication description and dates. Candidate wording; confirm every contribution and deliverable before approval."
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing & Talks",
+      "entries": [
+        {
+          "name": "Narwhals Podcast: Episode 33",
+          "role": "Guest",
+          "dates": "2017",
+          "url": "https://narwhals-ae0a791a.simplecast.com/episodes/33-S9tXUAjz",
+          "summary": "Joined Drew and Keiran to discuss app development, frameworks, and moving from freelance work to product development.",
+          "description": "Joined Drew and Keiran to discuss app development, frameworks, and moving from freelance work to product development.",
+          "reviewStatus": "established",
+          "reviewNotes": ""
+        },
+        {
+          "name": "Medium",
+          "role": "Writer",
+          "dates": "Ongoing",
+          "url": "https://medium.com/@damianmakki",
+          "summary": "Writing on design, engineering, and side projects.",
+          "description": "Writing on design, engineering, and side projects.",
+          "reviewStatus": "established",
+          "reviewNotes": ""
+        }
+      ]
+    }
+  ]
+}

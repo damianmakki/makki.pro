@@ -5,6 +5,9 @@
   margin-bottom: 28px;
 }
 .avatar {
+  padding: 0;
+  border: 0;
+  background: transparent;
   width: 75px;
   height: 75px;
   border-radius: 100%;

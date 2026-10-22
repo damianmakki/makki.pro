@@ -19,9 +19,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.005em;
-  transition:
-    background 0.25s var(--ease),
-    color 0.25s var(--ease);
 }
 
 a {
@@ -49,4 +46,22 @@ a.inline:hover {
 ::selection {
   background: var(--fg);
   color: var(--bg);
+}
+/* Subtle accessibility refinements, preserving the existing visual style. */
+a:focus-visible, button:focus-visible { outline: 2px solid var(--fg); outline-offset: 4px; }
+.print-contact { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+@media print {
+  @page { margin: 18mm; }
+  html, html[data-theme], body { background: white; color: black; --fg: black; --fg-muted: #333; --fg-subtle: #444; --border: #ddd; }
+  nav.top, footer.site, .download-btn { display: none; }
+  .app { display: block; }
+  main { padding: 0; max-width: none; }
+  .col { max-width: none; }
+  .print-contact { display: block; font-size: 11pt; }
+  .resume-section h2 { break-after: avoid; }
+  .entry { break-inside: avoid; }
+  .page-enter { animation: none; }
 }
