@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useLayoutEffect } from 'react';
 import About from './components/About';
 import Resume from './pages/Resume';
 
@@ -17,7 +17,7 @@ function useTheme() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.documentElement.dataset.theme = theme;
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.content = theme === 'dark' ? '#0e0e0d' : '#fbfbfa';

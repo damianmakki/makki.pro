@@ -1,13 +1,13 @@
 # Résumé copy review
 
-These drafts are not included in the public website or download. Public versions keep the original compact position list until you approve a description.
+These drafts are not included in the public website or download. Public versions use the short summary bylines; longer descriptions remain here for review.
 
-Edit `src/data/career.json`: revise `description`, resolve `reviewNotes`, and set `reviewStatus` to `approved`. Rebuild to update both HTML and PDF. Do not approve unfinished or unverified copy.
+Edit `src/data/career.json`: update `summary` to change a public byline, then rebuild the website and PDF. Longer `description` drafts are for review only; resolve `reviewNotes` before approving those drafts.
 
 ## Career reconciliation
 
 - Job Boardly duplicate removed.
-- Somatic appears once under Startup Experience; Founder reconciles with the live title.
+- Somatic appears once under Personal Projects; Little Herb Places and Glamping on Wine appear under Startup Experience.
 - FittMatch retained from the live site.
 - Live Trace and Somatic URLs retained; verify destinations before publishing.
 - Institution spelling normalized to Stevens Institute of Technology.
@@ -87,16 +87,6 @@ Contributed visual design for Vivid Software Solutions, developing layouts and a
 
 ## Startup Experience
 
-### Somatic
-
-Founder · 2026
-
-**Status:** draft
-
-Founded Somatic and brought together product direction, interface design, and development. Shaped the project from early concepts into an independent product.
-
-**Verify:** Live site says Founder; checkout says Designer and Developer. Confirm title, product description, and URL. Candidate wording; confirm every contribution and deliverable before approval.
-
 ### FittMatch
 
 Developer · 2026
@@ -126,6 +116,26 @@ Brand and Graphic Designer · 2024 - Present
 Contributed brand and graphic design for Schvitzin', translating the brand direction into visual assets and materials.
 
 **Verify:** Confirm ongoing engagement and deliverable types. Candidate wording; confirm every contribution and deliverable before approval.
+
+### Little Herb Places
+
+Designer and Developer · 2024
+
+**Status:** draft
+
+Designed and developed Little Herb Places, shaping the visual experience and translating it into a working website.
+
+**Verify:** Confirm functionality and contribution. Candidate wording; confirm every contribution and deliverable before approval.
+
+### Glamping on Wine
+
+Designer, Restorer, and Maid · 2023
+
+**Status:** draft
+
+Combined design, restoration, and hands-on upkeep for Glamping on Wine, working across the physical experience and its presentation.
+
+**Verify:** Confirm scope and whether playful title should stay in PDF. Candidate wording; confirm every contribution and deliverable before approval.
 
 ### Welcome
 
@@ -229,6 +239,16 @@ Contributed design work for Tequila Avión, creating visual assets in support of
 
 ## Personal Projects
 
+### Somatic
+
+Founder · 2026
+
+**Status:** draft
+
+Founded Somatic and brought together product direction, interface design, and development. Shaped the project from early concepts into an independent product.
+
+**Verify:** Live site says Founder; checkout says Designer and Developer. Confirm title, product description, and URL. Candidate wording; confirm every contribution and deliverable before approval.
+
 ### Ruckus Labs
 
 Owner · 2012 - Present
@@ -248,26 +268,6 @@ Designer and Developer · 2026
 Designed and developed Trace, bringing together product thinking, interface design, and implementation in an independent project.
 
 **Verify:** Live URL differs from checkout. Confirm canonical destination and product purpose. Candidate wording; confirm every contribution and deliverable before approval.
-
-### Little Herb Places
-
-Designer and Developer · 2024
-
-**Status:** draft
-
-Designed and developed Little Herb Places, shaping the visual experience and translating it into a working website.
-
-**Verify:** Confirm functionality and contribution. Candidate wording; confirm every contribution and deliverable before approval.
-
-### Glamping on Wine
-
-Designer, Restorer, and Maid · 2023
-
-**Status:** draft
-
-Combined design, restoration, and hands-on upkeep for Glamping on Wine, working across the physical experience and its presentation.
-
-**Verify:** Confirm scope and whether playful title should stay in PDF. Candidate wording; confirm every contribution and deliverable before approval.
 
 ### RunItBack
 

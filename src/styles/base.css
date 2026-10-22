@@ -19,9 +19,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.005em;
-  transition:
-    background 0.25s var(--ease),
-    color 0.25s var(--ease);
 }
 
 a {

@@ -102,7 +102,7 @@ public/             Static assets (CNAME, favicon, etc.)
 
 ## Résumé download and descriptions
 
-The existing React layout is retained. `src/data/career.json` feeds the compact web résumé and the complete PDF. Descriptions marked `draft` stay in `content-review/resume-copy.md`; only `approved` descriptions and existing writing/talk summaries appear publicly. Review the draft wording, verify the claims and dates, then set accepted entries to `approved`.
+The existing React layout is retained. `src/data/career.json` feeds the compact web résumé and the complete PDF. Each entry’s short `summary` appears as a byline on the web résumé and in the PDF. Longer `description` copy stays in `content-review/resume-copy.md` for review. Edit `summary` to update a public byline; verify claims and dates before adding detail.
 
 Install the PDF tooling once:
 

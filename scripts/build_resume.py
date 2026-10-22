@@ -57,13 +57,13 @@ class NumberedCanvas(canvas.Canvas):
 story = [para(escape(career['name']), 'name'), para(escape(career['subtitle']), 'subtitle'),
  para(link('mailto:'+career['email'], career['email'])+' &nbsp; | &nbsp; '+link(career['url'], 'makki.pro'), 'body'),
  Spacer(1, 9), para(escape(career['intro']), 'body')]
-review = ['# Résumé copy review', '', 'These drafts are not included in the public website or download. Public versions keep the original compact position list until you approve a description.', '', 'Edit `src/data/career.json`: revise `description`, resolve `reviewNotes`, and set `reviewStatus` to `approved`. Rebuild to update both HTML and PDF. Do not approve unfinished or unverified copy.', '', '## Career reconciliation', '', '- Job Boardly duplicate removed.', '- Somatic appears once under Startup Experience; Founder reconciles with the live title.', '- FittMatch retained from the live site.', '- Live Trace and Somatic URLs retained; verify destinations before publishing.', '- Institution spelling normalized to Stevens Institute of Technology.', '- Dates and ongoing roles still require your review.', '']
+review = ['# Résumé copy review', '', 'These drafts are not included in the public website or download. Public versions use the short summary bylines; longer descriptions remain here for review.', '', 'Edit `src/data/career.json`: update `summary` to change a public byline, then rebuild the website and PDF. Longer `description` drafts are for review only; resolve `reviewNotes` before approving those drafts.', '', '## Career reconciliation', '', '- Job Boardly duplicate removed.', '- Somatic appears once under Personal Projects; Little Herb Places and Glamping on Wine appear under Startup Experience.', '- FittMatch retained from the live site.', '- Live Trace and Somatic URLs retained; verify destinations before publishing.', '- Institution spelling normalized to Stevens Institute of Technology.', '- Dates and ongoing roles still require your review.', '']
 for section in career['sections']:
  story.append(para(escape(section['title']).upper(), 'section'))
  review += ['## '+section['title'], '']
  for entry in section['entries']:
   heading = link(entry['url'],entry['name']) if entry['url'] else escape(entry['name'])
-  text = entry['description'] if entry['reviewStatus']=='approved' else entry['summary'] if entry['reviewStatus']=='established' else ''
+  text = entry['summary']
   block = [para(heading,'company'), para(escape(entry['role'])+' &nbsp; | &nbsp; '+escape(entry['dates']),'role')]
   if text: block.append(para(escape(text),'body'))
   block.append(Spacer(1,10))

@@ -28,8 +28,7 @@ export default function Resume() {
                   {entry.url ? <a href={entry.url}>{entry.name}</a> : entry.name}
                   {entry.name === 'CURB' && <span className="role"> (Taxi Magic, Sedan Magic)</span>}
                 </h3>
-                {entry.reviewStatus === 'approved' && <p>{entry.description}</p>}
-                {entry.reviewStatus === 'established' && <p>{entry.summary}</p>}
+                <p>{entry.summary}</p>
               </div>
             </div>
           ))}

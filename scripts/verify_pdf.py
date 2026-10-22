@@ -23,7 +23,7 @@ for section in career['sections']:
   assert normalize(entry['name']) in text, entry['name']
   assert normalize(entry['role']) in text, entry['role']
   assert normalize(entry['dates']) in text, entry['dates']
-  public = entry['description'] if entry['reviewStatus']=='approved' else entry['summary'] if entry['reviewStatus']=='established' else ''
+  public = entry['summary']
   if public: assert normalize(public) in text, entry['name']+' description missing'
   if entry['reviewStatus']=='draft' and entry['description']!=entry['summary']:
    assert normalize(entry['description']) not in text, entry['name']+' draft leaked'
